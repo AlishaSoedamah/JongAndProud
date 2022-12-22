@@ -20,7 +20,6 @@
             <a href="/login">Already a member? Click here.</a>
           </form>
         </div>
-        </div>
         @include('templates/footer')
     </body>
 </html>
