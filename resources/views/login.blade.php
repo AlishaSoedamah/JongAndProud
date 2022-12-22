@@ -6,10 +6,18 @@
         <title>Login</title>
     </head>
     <body>
-        <?php @include('templates/header') ?>
+        @include('templates/header')
         <div>
-          <h1>hello from the login page</h1>
+          <h1>Login</h1>
+          <form>
+            <button>Login with Google?</button>
+            <label for="email">Email</label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+            <label for="password">Password</label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+            <a href="/sign-up">Not a member? Click here.</a>
+          </form>
         </div>
-        <?php @include('templates/footer') ?>
+        @include('templates/footer')
     </body>
 </html>
