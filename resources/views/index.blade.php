@@ -8,15 +8,17 @@
     </head>
     <body>
         @include('templates/header')
-        <div>
-          <h1>Jong</h1>
-          <h1>&</h1>
-          <h1>Proud</h1>
-          <p>Jong & Proud is een werkgroep binnen het COC Midden Nederland voor 
-             LHBTIQ+ jongvolwassenen tussen 18 en 30 jaar in Amersfoort.
-          </p>
+        <section class="hero">
+          <div class="fancy-hero-text">
+            <h1>Jong</h1>
+            <h1>&</h1>
+            <h1>Proud</h1>
+            <p>Jong & Proud is een werkgroep binnen het COC Midden Nederland voor 
+                LHBTIQ+ jongvolwassenen tussen 18 en 30 jaar in Amersfoort.
+            </p>
+          </div>
           <button>Lid worden?</button>
-        </div>
+        </section>
         @include('templates/footer')
     </body>
 </html>

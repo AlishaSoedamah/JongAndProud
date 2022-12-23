@@ -1,3 +1,60 @@
+html {
+    --primary-color: #f8f0e3;
+    --secondary-color: #1e1e1f;
+}
+
 body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.fancy-hero-text > h1 {
+    font-size: 6em;
+    margin: 0;
+}
+
+nav > ul {
+    display: flex;
+}
+
+nav > ul > li {
+    list-style: none;
+    margin-left: 0.5em;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+nav > ul > li > a:hover,
+.login-btn,
+.signup-btn {
+    cursor: pointer;
+}
+
+.login-btn {
+    padding: 0.5em;
+    background-color: purple;
+    color: var(--primary-color);
+    border-radius: 0.2em;
+}
+
+.signup-btn {
+    padding: 0.5em;
+    background-color: pink;
+    color: var(--secondary-color);
+    border-radius: 0.2em;
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 4em;
+    }
+
+    nav > ul > li > a {
+        display: none;
+    }
 }
