@@ -13,11 +13,11 @@
             <h1>Jong</h1>
             <h1>&</h1>
             <h1>Proud</h1>
-            <p>Jong & Proud is een werkgroep binnen het COC Midden Nederland voor 
-                LHBTIQ+ jongvolwassenen tussen 18 en 30 jaar in Amersfoort.
-            </p>
           </div>
-          <button>Lid worden?</button>
+          <p class="hero-desc">Jong & Proud is een werkgroep binnen het COC Midden Nederland voor 
+                LHBTIQ+ jongvolwassenen tussen 18 en 30 jaar in Amersfoort.
+          </p>
+          <butto class="cta-btn">Lid worden?</button>
         </section>
         @include('templates/footer')
     </body>

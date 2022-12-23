@@ -10,11 +10,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.fancy-hero-text > h1 {
-    font-size: 6em;
-    margin: 0;
-}
-
+/* NAV */
 nav > ul {
     display: flex;
 }
@@ -31,7 +27,8 @@ nav > ul > li > a {
 
 nav > ul > li > a:hover,
 .login-btn,
-.signup-btn {
+.signup-btn,
+.cta-btn {
     cursor: pointer;
 }
 
@@ -49,12 +46,58 @@ nav > ul > li > a:hover,
     border-radius: 0.2em;
 }
 
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10em;
+}
+
+.fancy-hero-text > h1 {
+    font-size: 8em;
+    margin: 0;
+}
+
+.hero-desc {
+    width: 50ch;
+}
+
+.fancy-hero-text {
+    text-align: center;
+}
+
+.cta-btn {
+    background: pink;
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 0.2em;
+}
+
+/* FOOTER */
+footer {
+    position: fixed;
+    bottom: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+
 @media screen and (max-width: 480px) {
-    h1 {
+    .fancy-hero-text >h1 {
         font-size: 4em;
     }
 
     nav > ul > li > a {
         display: none;
     }
+
+    .hero-desc {
+        width: 30ch;
+    }
+    
 }
