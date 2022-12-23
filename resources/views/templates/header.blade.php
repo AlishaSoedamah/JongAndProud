@@ -1,6 +1,6 @@
 <ul>
-    <li class="logo"><a href="/index"><span>J&P</span></a></li>
-    <li><a href="/index">Home</a></li>
+    <li class="logo"><a href="/"><span>J&P</span></a></li>
+    <li><a href="/">Home</a></li>
     <li><a href="/about">Over ons</a></li>
     <li><a href="/gallery">Galerij</a></li>
     <li><a href="/team">Team</a></li>

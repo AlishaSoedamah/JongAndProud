@@ -9,7 +9,7 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\SignupController;
 
-Route::get('/index', [HomeController::class, "index"]);
+Route::get('/', [HomeController::class, "index"]);
 Route::get('/about', [AboutController::class, "about"]);
 Route::get('/gallery', [GalleryController::class, "gallery"]);
 Route::get('/team', [TeamController::class, "team"]);
