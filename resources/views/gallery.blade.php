@@ -1,3 +1,5 @@
+use Phpfastcache\Helper\Psr16Adapter;
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -10,6 +12,11 @@
         @include('templates/header')
         <div>
           <h1>Galerij</h1>
+          <div class="gallery-instagram">
+            <!-- gallery -->
+
+]
+          </div>
         </div>
         @include('templates/footer')
     </body>
