@@ -1,5 +1,3 @@
-use Phpfastcache\Helper\Psr16Adapter;
-
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -13,9 +11,11 @@ use Phpfastcache\Helper\Psr16Adapter;
         <div>
           <h1>Galerij</h1>
           <div class="gallery-instagram">
-            <!-- gallery -->
-
-]
+            @foreach ($images as $key => $image)
+                    <figure>
+                        <img src="{{url('insta/images/')}}/{{$key.'.png'}}" alt=" ">
+                    </figure>
+            @endforeach
           </div>
         </div>
         @include('templates/footer')
