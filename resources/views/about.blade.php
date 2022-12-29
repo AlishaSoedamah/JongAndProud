@@ -8,7 +8,7 @@
     </head>
     <body>
         @include('templates/header')
-        <div>
+        <div class="main-wrapper">
           <h1>Over ons</h1>
           <p>Jong & Proud organiseer t om de maand een 
              activiteit. Deze activiteiten zijn bedoelt om plezier 

@@ -8,7 +8,7 @@
     </head>
     <body>
         @include('templates/header')
-        <div>
+        <div class="main-wrapper">
           <h1>Contact</h1>
           <form action="" method="post">
             <label for="name">Name:</label><br>

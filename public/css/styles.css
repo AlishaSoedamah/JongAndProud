@@ -3,11 +3,17 @@ html {
     --secondary-color: #1e1e1f;
 }
 
+/* ALL PAGES */
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-wrapper {
+    padding: 0 4em;
 }
 
 /* NAV */
@@ -32,6 +38,7 @@ nav > ul > li > a:hover,
     cursor: pointer;
 }
 
+/* SIGNIN LOGIN */
 .login-btn {
     padding: 0.5em;
     background-color: purple;

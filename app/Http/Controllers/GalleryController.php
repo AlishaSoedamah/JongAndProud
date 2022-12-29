@@ -2,14 +2,12 @@
 
 namespace App\Http\Controllers;
 
-
 use App\Models\Product;
 use Illuminate\Http\Request;
 use Phpfastcache\Helper\Psr16Adapter;
 
 class GalleryController extends Controller
 {
-
     public function gallery()
     {
         $instagram = \InstagramScraper\Instagram::withCredentials(new \GuzzleHttp\Client(), 'name', 'password', new Psr16Adapter('Files'));
