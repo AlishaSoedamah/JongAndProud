@@ -8,7 +8,7 @@
     </head>
     <body>
         @include('templates/header')
-        <section class="hero">
+        <section class="hero main-wrapper">
           <div class="fancy-hero-text">
             <h1>Jong</h1>
             <h1>&</h1>

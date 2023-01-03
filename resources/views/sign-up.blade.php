@@ -8,7 +8,7 @@
     </head>
     <body>
         @include('templates/header')
-        <div>
+        <div class="main-wrapper">
           <h1>Sign up</h1>
           <form>
             <button>Sign up with Google?</button>

@@ -8,7 +8,7 @@
     </head>
     <body>
         @include('templates/header')
-        <div>
+        <div class="main-wrapper">
           <h1>Galerij</h1>
         </div>
         @include('templates/footer')
