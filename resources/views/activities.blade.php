@@ -14,18 +14,22 @@
             <p>this will be a calender</p>
           </div>
           <div class="dates">
-            <p><span>19</span>feb</p>
-            <p><span>11</span>maa</p>
-            <p><span>15</span>apr</p>
-            <p><span>20</span>mei</p>
-            <p><span>N/A</span>jun</p>
-            <p><span>N/A</span>juli</p>
-            <p><span>19</span>aug</p>
-            <p><span>16</span>sep</p>
-            <p><span>11</span>okt</p>
-            <p><span>16</span>okt</p>
-            <p><span>25</span>nov</p>
-            <p><span>16</span>dec</p>
+            <div class="row1">
+              <p><span>19</span>feb</p>
+              <p><span>11</span>maa</p>
+              <p><span>15</span>apr</p>
+              <p><span>20</span>mei</p>
+              <p><span>__</span>jun</p>
+              <p><span>__</span>juli</p>
+            </div>
+            <div class="row2">
+              <p><span>19</span>aug</p>
+              <p><span>16</span>sep</p>
+              <p><span>11</span>okt</p>
+              <p><span>16</span>okt</p>
+              <p><span>25</span>nov</p>
+              <p><span>16</span>dec</p>
+            </div>
           </div>
         </div>
         @include('templates/footer')

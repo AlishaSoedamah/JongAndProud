@@ -15,6 +15,10 @@ body {
 }
 
 /* NAV */
+.logo {
+    font-weight: 700;
+}
+
 nav > ul {
     display: flex;
 }
@@ -39,15 +43,13 @@ nav > ul > li > a:hover,
 /* BUTTONS */
 
 .login-btn {
-    padding: 0.5em;
-    background-color: purple;
+    background-color: pink;
     color: var(--primary-color);
     border-radius: 0.2em;
 }
 
 .signup-btn {
-    padding: 0.5em;
-    background-color: pink;
+    background-color: #f7e0bc;
     color: var(--secondary-color);
     border-radius: 0.2em;
 }
@@ -79,7 +81,7 @@ nav > ul > li > a:hover,
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0 10em;
+    padding: 2em 10em;
 }
 
 .fancy-hero-text > h1 {
@@ -96,18 +98,29 @@ nav > ul > li > a:hover,
     text-align: center;
 }
 
-/* HOME PAGE */
-.core-values {
-    outline: red 1px solid;
+.quote-container {
+    display: flex; 
+    align-center;
+    justify-content: center;
+    background-color: #2d2d2d;
+    padding: 10px; 
+    border-radius: 5px;
 }
 
+.quote {
+    color: white;
+    width: 30ch;
+    font-size: 2em;
+}
+
+/* HOME PAGE */
 .big-widget {
     background-color: #ffd8f3;
     border-radius: 5px;
 }
 
 .small-widget-container {
-    display: flex;
+    display: grid;
 }
 
 .small-left-widget {
@@ -123,12 +136,15 @@ nav > ul > li > a:hover,
 .calendar {
     outline: 2px red solid;
 }
+.dates {
+    display: flex; 
+}
 
-.dates > p {
+.dates > div > p {
   margin: 40px 0;
 }
 
-.dates > p > span {
+.dates > div > p > span {
     background: #ffeed2;
     padding: 10px;
     border-radius: 40px;
@@ -138,20 +154,77 @@ nav > ul > li > a:hover,
 /* FOOTER */
 footer {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
-@media screen and (max-width: 480px) {
-    .fancy-hero-text >h1 {
-        font-size: 4em;
+@media screen and (max-width: 600px){
+    .dates {
+        display: inline; 
+    }
+
+    .fancy-hero-text > h1 {
+        font-size: 6em;
     }
 
     nav > ul > li > a {
         display: none;
     }
+}
+
+@media screen and (max-width: 480px) {
+    .fancy-hero-text > h1 {
+        font-size: 4em;
+    }
+
+    .hero {
+        padding: 5em;
+    }
+
+    .main-wrapper {
+        padding: 0 2em;
+    }
 
     .hero-desc {
         width: 30ch;
     }
-    
+
+    .hero-img-container {
+        position: relative;
+    }
+
+    .hero-img {
+        position: absolute;
+        z-index: -1;
+        border-radius: 5px;
+        width: 190px;
+        height: 300px;
+    }
+
+    .hero-img-one {
+        right: 100px;
+        background-color: #666666;
+    }
+
+    .hero-img-two {
+        right: 150px;
+        background-color: gray;
+    }
+
+    .hero-img-three {
+        right: 150px;
+        rotate: 30deg;
+        background-color: #666666;
+    }
+
+    .hero-img-four {
+        rotate: 60deg;
+        background-color: #585858;
+    }
+
+    .hero-img-five {
+        rotate: 6deg;
+        background-color: #dddddd;
+    }
 }

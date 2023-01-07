@@ -9,7 +9,25 @@
     <body>
         @include('templates/header')
         <div class="main-wrapper">
-          <div class="hero fancy-hero-text">
+          <section class="hero fancy-hero-text">
+          <div class="hero-img-container">
+            <div class="hero-img hero-img-one">
+              <img src="" alt="">
+            </div>
+            <div class="hero-img hero-img-two">
+              <img src="" alt="">
+            </div>
+            <div class="hero-img hero-img-three">
+              <img src="" alt="">
+            </div>
+            <div class="hero-img hero-img-four">
+              <img src="" alt="">
+            </div>
+            <div class="hero-img hero-img-five">
+              <img src="" alt="">
+            </div>
+          </div>
+
             <h1>Jong</h1>
             <h1>&</h1>
             <h1>Proud</h1>
@@ -17,10 +35,10 @@
                 LHBTIQ+ jongvolwassenen tussen 18 en 30 jaar in Amersfoort.
             </p>
           <button class="cta-btn">Lid worden?</button>
-          </div>
+          </section>
         <section>
-          <div>
-            <p>Chaz Bono <q>I've been embraced by a new community. That's what happens when you're
+          <div class="quote-container">
+            <p class="quote">Chaz Bono <q>I've been embraced by a new community. That's what happens when you're
              finally honest about who you are; you find others like you.</q> 
             <p>
           </div>
