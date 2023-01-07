@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ActivitiesController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\TeamController;
 use App\Http\Controllers\ContactController;
@@ -11,6 +12,7 @@ use App\Http\Controllers\SignupController;
 
 Route::get('/', [HomeController::class, "index"]);
 Route::get('/about', [AboutController::class, "about"]);
+Route::get('/activities', [ActivitiesController::class, "activities"]);
 Route::get('/gallery', [GalleryController::class, "gallery"]);
 Route::get('/team', [TeamController::class, "team"]);
 Route::get('/contact', [ContactController::class, "contact"]);

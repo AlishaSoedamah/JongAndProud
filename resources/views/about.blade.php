@@ -10,7 +10,7 @@
         @include('templates/header')
         <div class="main-wrapper">
           <h1>Over ons</h1>
-          <p>Jong & Proud organiseer t om de maand een 
+          <p>Jong & Proud organiseert om de maand een 
              activiteit. Deze activiteiten zijn bedoelt om plezier 
              te maken met elkaar of lekker en nieuwe LHBTI+ 
              mensen te leren kennen. 

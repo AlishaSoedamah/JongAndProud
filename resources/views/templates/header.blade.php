@@ -3,6 +3,7 @@
         <li class="logo"><a href="/"><span>J&P</span></a></li>
         <li><a href="/">Home</a></li>
         <li><a href="/about">Over ons</a></li>
+        <li><a href="/activities">Activiteiten</a></li>
         <li><a href="/gallery">Galerij</a></li>
         <li><a href="/team">Team</a></li>
         <li><a href="/contact">Contact</a></li>
