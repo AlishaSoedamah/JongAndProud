@@ -198,33 +198,39 @@ footer {
         position: absolute;
         z-index: -1;
         border-radius: 5px;
-        width: 190px;
-        height: 300px;
+        width: 150px;
+        height: 230px;
     }
 
     .hero-img-one {
-        right: 100px;
         background-color: #666666;
+        top: -106px;
+        rotate: 17deg;
     }
 
     .hero-img-two {
-        right: 150px;
+        right: -158px;
+        rotate: 25deg;
         background-color: gray;
     }
 
     .hero-img-three {
-        right: 150px;
-        rotate: 30deg;
+        rotate: 341deg;
+        top: -154px;
+        right: 8px;
         background-color: #666666;
     }
 
     .hero-img-four {
-        rotate: 60deg;
+        rotate: 15deg;
+        right: 10px;
+        bottom: -369px;
         background-color: #585858;
     }
 
     .hero-img-five {
-        rotate: 6deg;
+        rotate: 351deg;
+        bottom: -433px;
         background-color: #dddddd;
     }
 }
