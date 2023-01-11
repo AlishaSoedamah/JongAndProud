@@ -28,7 +28,7 @@
                 </p>
             </div>
           </div>
-        </div>
         @include('templates/footer')
+        </div>
     </body>
 </html>

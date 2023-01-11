@@ -10,7 +10,7 @@
         @include('templates/header')
         <div class="main-wrapper">
           <h1>Galerij</h1>
-        </div>
         @include('templates/footer')
+        </div>
     </body>
 </html>

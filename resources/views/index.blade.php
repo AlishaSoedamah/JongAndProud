@@ -78,7 +78,7 @@
              met de nieuwste activiteiten en meer!</p>
              <button class="cta-btn">Ik wil lid worden</button>
         </section>
-      </div>
         @include('templates/footer')
+      </div>
     </body>
 </html>

@@ -18,7 +18,7 @@
             <input type="password" placeholder="Enter Password" name="password" required>
             <a href="/sign-up">Not a member? Click here.</a>
           </form>
-        </div>
         @include('templates/footer')
+        </div>
     </body>
 </html>

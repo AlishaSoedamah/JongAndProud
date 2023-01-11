@@ -20,7 +20,7 @@
             <input type="password" placeholder="Repeat password" name="repeatPassword" required>
             <a href="/login">Already a member? Click here.</a>
           </form>
-        </div>
         @include('templates/footer')
+        </div>
     </body>
 </html>

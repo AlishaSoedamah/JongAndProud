@@ -28,7 +28,7 @@
             ver welkomen allen om lid te worden.
           </p>
           <img src="" alt="logo">
-        </div>
         @include('templates/footer')
+        </div>
     </body>
 </html>

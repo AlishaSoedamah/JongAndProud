@@ -19,7 +19,7 @@
             <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
             <input type="submit" value="Submit">
         </form> 
-        </div>
         @include('templates/footer')
+        </div>
     </body>
 </html>

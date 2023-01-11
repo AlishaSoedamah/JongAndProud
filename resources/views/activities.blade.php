@@ -31,7 +31,7 @@
               <p><span>16</span>dec</p>
             </div>
           </div>
-        </div>
         @include('templates/footer')
+        </div>
     </body>
 </html>
