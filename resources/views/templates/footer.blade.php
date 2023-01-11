@@ -2,7 +2,7 @@
     <span class="copyright">All rights reserved <?php $date = date('Y'); echo $date; ?> &copy;</span>
     <div class="footer-links">
         <div>
-            <p>Email</p>
+            <p>Meer weten? Mail ons!</p>
             <a href="mailto:jongproud@gmail.com">jongproud@gmail.com</a>
         </div>
         <div>

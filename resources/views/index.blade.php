@@ -9,7 +9,7 @@
     <body>
         @include('templates/header')
         <div class="main-wrapper">
-          <section class="hero fancy-hero-text">
+        <section class="hero fancy-hero-text">
           <div class="hero-img-container">
             <div class="hero-img hero-img-one">
               <img src="" alt="">
@@ -27,37 +27,40 @@
               <img src="" alt="">
             </div>
           </div>
-
-            <h1>Jong</h1>
-            <h1>&</h1>
-            <h1>Proud</h1>
-            <p class="hero-desc">Jong & Proud is een werkgroep binnen het COC Midden Nederland voor 
-                LHBTIQ+ jongvolwassenen tussen 18 en 30 jaar in Amersfoort.
-            </p>
+          <h1>Jong</h1>
+          <h1>&</h1>
+          <h1>Proud</h1>
+          <p class="hero-desc">Jong & Proud is een werkgroep binnen het COC Midden Nederland voor 
+            LHBTIQ+ jongvolwassenen tussen 18 en 30 jaar in Amersfoort.
+          </p>
           <button class="cta-btn">Lid worden?</button>
-          </section>
+        </section>
         <section>
-          <div class="quote-container">
+        <div class="quote-container">
+          <div class="quote-block">
             <p class="quote">Chaz Bono <q>I've been embraced by a new community. That's what happens when you're
              finally honest about who you are; you find others like you.</q> 
             <p>
           </div>
+            <img src="" alt="Rainbow flag">
+        </div>
         </section>
         <article>
-          <h2>Wat is Jong & Proud?</h2>
-          <p>Niet iedereen voelt zich veilig in hun eigen omgeving om over het onderwerp LHBTIQ+ 
-            te praten of om hulp te vragen. Dit geldt ook voor jong volwassenen die 
-            zich pas net uitvogelen wie ze werkelijk zijn. Jong & Proud is een werkgroep 
-            binnen het COC Midden Nederland voor LHBTIQ+ jongvolwassenen tussen 18 en 30 jaar in Amersfoort.
-            Wij creëren een veilige plek in Amersfoort om samen plezier te hebben en elkaar te ondersteunen.
-          </p>
-          <button class="main-btn" >Over ons</button>
+          <div class="center-flex">
+            <h2>Wat is Jong & Proud?</h2>
+            <p class="text-container">Niet iedereen voelt zich veilig in hun eigen omgeving om over het onderwerp LHBTIQ+ 
+              te praten of om hulp te vragen. Dit geldt ook voor jong volwassenen die 
+              zich pas net uitvogelen wie ze werkelijk zijn. Jong & Proud is een werkgroep 
+              binnen het COC Midden Nederland voor LHBTIQ+ jongvolwassenen tussen 18 en 30 jaar in Amersfoort.
+              Wij creëren een veilige plek in Amersfoort om samen plezier te hebben en elkaar te ondersteunen.
+            </p>
+            <button class="main-btn">Over ons</button>
+          </div>
           <div class="core-values">
             <div class="big-widget">
               <h3>Veilige plek creëen</h3>
               <p>Niet bang hoeven zijn om jezelf te kunnen zijn</p>
             </div>
-          <div class="small-widget-container">
             <div class="small-left-widget">
               <h3>Activiteiten organiseren</h3>
               <p>Plezier hebben met elkaar</p>
@@ -65,18 +68,16 @@
             <div class="small-right-widget">
               <h3>Connecties maken</h3>
               <p>Leer andere mensen in dezelfde community kennen</p>
-            </div>
           </div>
-          <p>Om meer te weten, stuur gerust een email</p>
           </div>
         </article>
-        <section class="cta-bottom">
+        <section class="cta-bottom center-flex">
           <h2>Lid worden? Jazeker!</h2>
-          <p>Om lid te worden van Jong & Proud kunt u een email sturen naar het emailadres of u kunt ons contacteren op Facebook of Instagram. 
+          <p class="text-container">Om lid te worden van Jong & Proud kunt u een email sturen naar het emailadres of u kunt ons contacteren op Facebook of Instagram. 
              Als u zich aanmeld ontvangt u een email met informatie. Nadat wij de aanmelding hebben 
              bevestigd kunt u een account aanmaken op de website waardoor u altijd op de hoogte wordt gehouden 
              met de nieuwste activiteiten en meer!</p>
-             <button class="cta-btn">Ik wil lid worden</button>
+          <button class="cta-btn">Ik wil lid worden</button>
         </section>
         @include('templates/footer')
       </div>
