@@ -9,22 +9,26 @@
     <body>
         @include('templates/header')
         <div class="main-wrapper">
-          <h1>Team</h1>
+          <h1>Het Jong & Proud team</h1>
           <div>
             <div>
-                <h2>Team lead 1</h2>
-                <img src="" alt="here is a picture of team lead 1">
-                <p>Lorem ipsum dolor sit amet, consectetur 
-                   adipiscing elit, sed do eiusmod tempor 
-                   incididunt ut labore et dolore magna aliqua.
+                <h2>Joshua Kraan</h2>
+                <img class="team-pictures" src="././images/Teamlead1.webp" alt="Foto van Joshua Kraan">
+                <p>Joshua Kraan is 24 jaar en is de oprichter en organisator
+                   van Jong & Proud. Naast Jong & Proud zit Joshua bij het 
+                   Regenboogplatform Amersfoort en is hij één van de begeleiders 
+                   van Jong & Out Amersfoort. Verder houdt Joshua zich bezig met 
+                   muziek en fotografie.
                 </p>
             </div>
             <div>
-                <h2>Team lead 2</h2>
-                <img src="" alt="here is a picture of team lead 2">
-                <p>Lorem ipsum dolor sit amet, consectetur 
-                   adipiscing elit, sed do eiusmod tempor 
-                   incididunt ut labore et dolore magna aliqua.
+                <h2>Marjolein du Pree</h2>
+                <img class="team-pictures" src="././images/Teamlead2.webp" alt="Foto van Marjolein du Pree">
+                <p>Marjolein du Pree is 21 jaar en is kort nadat Jong & Proud is 
+                   opgericht mede organisator van Jong & Proud. Ook marjolein is 
+                   één van de begeleiders van Jong & Out en zit in het Regenboogplatform
+                   Amersfoort. Verder houdt Marjolein zich bezig met muziek, schrijven
+                   en lezen. 
                 </p>
             </div>
           </div>

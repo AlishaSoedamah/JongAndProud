@@ -31,6 +31,8 @@
               <p><span>16</span>dec</p>
             </div>
           </div>
+          <p>Meld je hier aan voor de komende activiteit deze maand!</p>
+          <button>Meld je aan!</button>
         @include('templates/footer')
         </div>
     </body>

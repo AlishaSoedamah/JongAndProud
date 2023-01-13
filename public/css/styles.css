@@ -18,6 +18,10 @@ h1 {
 }
 
 h2 {
+    font-size: 3em;
+}
+
+h3 {
     font-size: 2.5em;
 }
 
@@ -27,11 +31,12 @@ h2 {
 
 /* NAV */
 .logo {
-    font-weight: 700;
+    width: 90px;
 }
 
 nav > ul {
     display: flex;
+    /* justify-content: space-between; */
 }
 
 nav > ul > li {
@@ -53,12 +58,16 @@ nav > ul > li > a:hover,
 
 /* BUTTONS */
 .login-btn {
+    list-style: none;
+    text-decoration: none;
     background-color: pink;
     color: var(--primary-color);
     border-radius: 0.2em;
 }
 
 .signup-btn {
+    list-style: none;
+    text-decoration: none;
     background-color: #f7e0bc;
     color: var(--secondary-color);
     border-radius: 0.2em;
@@ -141,6 +150,7 @@ nav > ul > li > a:hover,
 }
 
 .hero-img-four {
+    z-index: -2;
     rotate: 15deg;
     right: 10px;
     bottom: -557px;
@@ -154,22 +164,49 @@ nav > ul > li > a:hover,
 }
 
 /* HOME PAGE */
-.quote-container {
-    display: flex; 
-    justify-content: center;
+.quote-containe {
+    display: relative;
 }
 
 .quote-block {
-    background-color: #2d2d2d;
-    padding: 10px; 
-    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background-color: light-gray;
+  }
+  
+  .quote {
+      font-size: 2em;
+  }
+  
+  blockquote {
+    width: 40ch;
+  }
+  
+  blockquote::before {
+    content: "‘‘";
+    font-family: sans-serif;
+    z-index: -1;
+    font-size: 10em;
+    position: absolute;
+    color: pink;
+    opacity: 0.7;
+    top: -110px;
+    left: 300px;
 }
 
-.quote {
-    color: white;
-    width: 30ch;
-    font-size: 1.2em;
-}
+  blockquote::after {
+      content: "”";
+      font-family: sans-serif;
+      z-index: -1;
+      font-size: 10em;
+      position: absolute;
+      color: pink;
+      opacity: 0.7;
+      top: -30px;
+      right: 370px;
+  }
 
 .core-values {
     display: grid; 
@@ -195,6 +232,12 @@ nav > ul > li > a:hover,
     grid-area: smallRight;
     background-color: #ffefb6;
     border-radius: var(--border-radius);;
+}
+
+.this-is-an-img {
+    border-radius: var(--border-radius);
+    aspect-ratio: 6;
+    background: burlywood;
 }
 
 .center-flex {
@@ -229,20 +272,28 @@ nav > ul > li > a:hover,
 
 /* ABOUT */
 /* TEAM */
+.team-pictures {
+    border-radius: 35em;
+}
 /* CONTACT */
+input {
+    background-color: #ffd8f3;
+    border: none;
+    padding: 10px;
+}
 /* GALLERY */
 /* LOGIN */
 /* SIGNUP */
 /* FOOTER */
-footer {
-  display: inline;
+.footer-container {
+  display: flex;
 }
 
-footer > .footer-links > div > p {
+.footer-container > .footer-links > div > p {
     font-weight: 700;
 }
 
-footer > .footer-links > div > a {
+.footer-container > .footer-links > div > a {
     text-decoration: none;
     color: var(--secondary-color);
 }
@@ -251,13 +302,12 @@ footer > .footer-links > div > a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    outline: red 1px solid;
 }
 
-.footer-links {
-    outline: green 1px solid;
+.nav {
+    display: flex;
+    flex-direction: column;
 }
-
 
 @media screen and (max-width: 600px){
     h1 {
@@ -266,6 +316,10 @@ footer > .footer-links > div > a {
 
     h2 {
        font-size: 1.5em;
+    }
+
+    .main-wrapper {
+        padding: 0 3em;
     }
 
     .dates {
@@ -281,6 +335,10 @@ footer > .footer-links > div > a {
     }
 
     nav > ul > li > a {
+        display: none;
+    }
+
+    .menu-btns {
         display: none;
     }
 
@@ -323,7 +381,7 @@ footer > .footer-links > div > a {
     }
 
     .main-wrapper {
-        padding: 0 2em;
+        padding: 0 1.2em;
     }
 
     .hero-desc {
@@ -357,5 +415,9 @@ footer > .footer-links > div > a {
 
     .hero-img-five {
         bottom: -433px;
+    }
+    
+    .footer-container {
+        display: inline;
     }
 }
