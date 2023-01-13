@@ -19,8 +19,8 @@
               <p><span>11</span>maa</p>
               <p><span>15</span>apr</p>
               <p><span>20</span>mei</p>
-              <p><span>__</span>jun</p>
-              <p><span>__</span>juli</p>
+              <p><span>nvt</span>jun</p>
+              <p><span>nvt</span>juli</p>
             </div>
             <div class="row2">
               <p><span>19</span>aug</p>
