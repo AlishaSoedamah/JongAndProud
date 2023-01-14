@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Team</title>
         <link href="{{ asset('css/styles.css') }}" rel="stylesheet" type="text/css" >
+        <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.png') }}">
     </head>
     <body>
         @include('templates/header')
@@ -13,7 +14,7 @@
           <div>
             <div>
                 <h2>Joshua Kraan</h2>
-                <img class="team-pictures" src="././images/Teamlead1.webp" alt="Foto van Joshua Kraan">
+                <img class="team-pictures" src="{{ asset('images/Teamlead1.webp') }}" alt="Foto van Joshua Kraan">
                 <p>Joshua Kraan is 24 jaar en is de oprichter en organisator
                    van Jong & Proud. Naast Jong & Proud zit Joshua bij het 
                    Regenboogplatform Amersfoort en is hij één van de begeleiders 
@@ -23,7 +24,7 @@
             </div>
             <div>
                 <h2>Marjolein du Pree</h2>
-                <img class="team-pictures" src="././images/Teamlead2.webp" alt="Foto van Marjolein du Pree">
+                <img class="team-pictures" src="{{ asset('images/Teamlead2.webp') }}" alt="Foto van Marjolein du Pree">
                 <p>Marjolein du Pree is 21 jaar en is kort nadat Jong & Proud is 
                    opgericht mede organisator van Jong & Proud. Ook marjolein is 
                    één van de begeleiders van Jong & Out en zit in het Regenboogplatform
