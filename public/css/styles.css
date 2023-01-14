@@ -287,6 +287,12 @@ input {
 /* FOOTER */
 .footer-container {
   display: flex;
+  justify-content: space-evenly;
+}
+
+.cta-footer {
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-container > .footer-links > div > p {

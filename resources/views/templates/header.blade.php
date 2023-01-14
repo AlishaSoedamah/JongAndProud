@@ -1,6 +1,6 @@
 <nav>
     <ul>
-        <li><img class="logo" src="./././images/logo.png" alt="Jong & proud logo"></a></li>
+        <li><img class="logo" src="{{ asset('images/logo.png') }}" alt="Jong & proud logo"></a></li>
         <li><a href="/">Home</a></li>
         <li><a href="/about">Over ons</a></li>
         <li><a href="/activities">Activiteiten</a></li>
