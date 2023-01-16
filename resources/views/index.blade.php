@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Home</title>
+        <title>Home Jong & Proud 🏳️‍🌈</title>
         <link href="{{ asset('css/styles.css') }}" rel="stylesheet" type="text/css" >
         <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.png') }}">
     </head>
@@ -16,14 +16,16 @@
             <img class="hero-img hero-img-two" src="{{ asset('images/card2.jpeg') }}" alt="">
             <img class="hero-img hero-img-three" src="{{ asset('images/card3.jpeg') }}" alt="">
             <img class="hero-img hero-img-four" src="{{ asset('images/card4.jpeg') }}" alt="">
-            <img class="hero-img hero-img-five" src="{{ asset('images/card5.jpeg') }}" alt="">
+            <img class="hero-img hero-img-five" src="{{ asset('images/card5.png') }}" alt="">
           </div>
           <h1>Jong</h1>
           <h1>&</h1>
           <h1>Proud</h1>
-          <p class="hero-desc">Jong & Proud is een werkgroep binnen het COC Midden Nederland voor 
-            LHBTIQ+ jongvolwassenen tussen 18 en 30 jaar in Amersfoort.
-          </p>
+          <div class="desc-block">
+            <p class="hero-desc">Jong & Proud is een werkgroep binnen het COC Midden Nederland voor 
+              LHBTIQ+ jongvolwassenen tussen 18 en 30 jaar in Amersfoort.
+            </p>
+          </div>
           <button class="cta-btn">Lid worden?</button>
         </section>
         <section class="quote-container">
