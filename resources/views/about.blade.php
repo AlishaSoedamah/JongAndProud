@@ -28,7 +28,7 @@
             activiteiten, verder Iedereen is welkom en wij 
             ver welkomen allen om lid te worden.
           </p>
-          <img src="././images/logo.png" alt="Het Jong & Proud logo">
+          <img src="{{ asset('images/logo.png') }}" alt="Het Jong & Proud logo">
         @include('templates/footer')
         </div>
     </body>

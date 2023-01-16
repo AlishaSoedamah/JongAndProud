@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap');
 
 html {
-    --primary-color: #f8f0e3;
+    --primary-color: #FDFBF7;
     --secondary-color: #1e1e1f;
     --border-radius: 5px;
 }
@@ -11,6 +11,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    background-color: var(--primary-color);
 }
 
 h1 {
@@ -27,6 +28,13 @@ h3 {
 
 .main-wrapper {
     padding: 0 4em;
+}
+
+.center-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 /* NAV */
@@ -87,6 +95,15 @@ nav > ul > li > a:hover,
     border-radius: 0.2em;
 }
 
+.google-btn {
+    border: 1px solid black;
+    background: var(--primary-color);
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 0.2em;
+}
+
+
 .login-btn:hover,
 .signup-btn:hover,
 .cta-btn:hover,
@@ -106,6 +123,10 @@ nav > ul > li > a:hover,
 .fancy-hero-text > h1 {
     font-size: 8em;
     margin: 0;
+    line-height: 145px;
+    color: var(--primary-color);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
 }
 
 .hero-desc {
@@ -127,6 +148,7 @@ nav > ul > li > a:hover,
     border-radius: var(--border-radius);
     width: 230px;
     height: 330px;
+    object-fit: cover;
 }
 
 .hero-img-one {
@@ -240,13 +262,6 @@ nav > ul > li > a:hover,
     background: burlywood;
 }
 
-.center-flex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
 /* ACTIVITIES */
 .calendar {
     outline: 2px red solid;
@@ -269,7 +284,6 @@ nav > ul > li > a:hover,
     margin-right: 0.5em;
 }
 
-
 /* ABOUT */
 /* TEAM */
 .team-pictures {
@@ -282,8 +296,17 @@ input {
     padding: 10px;
 }
 /* GALLERY */
-/* LOGIN */
-/* SIGNUP */
+/* LOGIN & SIGNUP*/
+form {
+    display: flex;
+    flex-direction: column;
+    /* width: 100vw; */
+}
+
+from > input {
+    width: 40px;
+}
+
 /* FOOTER */
 .footer-container {
   display: flex;
@@ -344,10 +367,6 @@ input {
         display: none;
     }
 
-    .menu-btns {
-        display: none;
-    }
-
     .hero-img {
         width: 200px;
         height: 310px;
@@ -380,6 +399,7 @@ input {
 @media screen and (max-width: 480px) {
     .fancy-hero-text > h1 {
         font-size: 4em;
+        line-height: normal;
     }
 
     .hero {

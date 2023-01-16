@@ -12,7 +12,7 @@
         <div class="main-wrapper">
           <h1>Login</h1>
           <form>
-            <button>Login with Google?</button>
+            <button class="google-btn">Login with Google?</button>
             <label for="email">Email</label>
             <input type="text" placeholder="Enter Email" name="email" required>
             <label for="password">Password</label>

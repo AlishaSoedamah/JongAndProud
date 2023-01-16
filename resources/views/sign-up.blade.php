@@ -12,13 +12,14 @@
         <div class="main-wrapper">
           <h1>Sign up</h1>
           <form>
-            <button>Sign up with Google?</button>
+            <button class="google-btn">Sign up with Google?</button>
             <label for="email">Email</label>
             <input type="text" placeholder="Enter Email" name="email" required>
             <label for="password">Password</label>
             <input type="password" placeholder="Enter Password" name="password" required>
             <label for="repeatPassword">Repeat your password</label>
             <input type="password" placeholder="Repeat password" name="repeatPassword" required>
+            <input type="submit">
             <a href="/login">Already a member? Click here.</a>
           </form>
         @include('templates/footer')

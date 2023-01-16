@@ -12,21 +12,11 @@
         <div class="main-wrapper">
         <section class="hero fancy-hero-text">
           <div class="hero-img-container">
-            <div class="hero-img hero-img-one">
-              <img src="" alt="">
-            </div>
-            <div class="hero-img hero-img-two">
-              <img src="" alt="">
-            </div>
-            <div class="hero-img hero-img-three">
-              <img src="" alt="">
-            </div>
-            <div class="hero-img hero-img-four">
-              <img src="" alt="">
-            </div>
-            <div class="hero-img hero-img-five">
-              <img src="" alt="">
-            </div>
+            <img class="hero-img hero-img-one" src="{{ asset('images/card1.jpeg') }}" alt="">
+            <img class="hero-img hero-img-two" src="{{ asset('images/card2.jpeg') }}" alt="">
+            <img class="hero-img hero-img-three" src="{{ asset('images/card3.jpeg') }}" alt="">
+            <img class="hero-img hero-img-four" src="{{ asset('images/card4.jpeg') }}" alt="">
+            <img class="hero-img hero-img-five" src="{{ asset('images/card5.jpeg') }}" alt="">
           </div>
           <h1>Jong</h1>
           <h1>&</h1>
