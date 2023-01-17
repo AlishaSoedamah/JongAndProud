@@ -1,0 +1,154 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em 0em 12em 0em;
+}
+
+.fancy-hero-text > h1 {
+    font-size: 10em;
+    margin: 0;
+    line-height: 160px;
+    color: var(--primary-color);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 4px 4px pink;
+}
+
+.hero-desc {
+    text-align: left;
+    width: 50ch;
+}
+
+.fancy-hero-text {
+    text-align: center;
+}
+
+.hero-img-container {
+    position: relative;
+}
+
+.hero-img {
+    position: absolute;
+    z-index: -1;
+    border-radius: var(--border-radius);
+    width: 230px;
+    height: 330px;
+    object-fit: cover;
+}
+
+.hero-img-one {
+    top: -106px;
+    left: 128px;
+    rotate: 17deg;
+}
+
+.hero-img-two {
+    right: -121px;
+    top: 34px;
+}
+
+.hero-img-three {
+    rotate: 341deg;
+    top: -154px;
+    right: 157px;
+}
+
+.hero-img-four {
+    z-index: -2;
+    rotate: 8deg;
+    right: 88px;
+    bottom: -557px;
+}
+
+.hero-img-five {
+    rotate: 351deg;
+    bottom: -640px;
+    left: 100px;
+}
+
+@media screen and (max-width: 600px){
+    .fancy-hero-text > h1 {
+        font-size: 6em;
+        line-height: 104px;
+        padding-bottom: 30px;
+    }
+
+    .hero-desc {
+        width: 42ch;
+    }
+
+    .hero-img {
+        width: 200px;
+        height: 310px;
+    }
+
+    .hero-img-one {
+        left: 82px
+    }
+
+    .hero-img-three {
+        top: -125px;
+        right: 38px;
+    }
+
+    .hero-img-four {
+        right: 24px;
+        bottom: -548px;
+    }
+
+    .hero-img-five {
+        left: 46px;
+        bottom: -590px;
+        rotate: 346deg;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .fancy-hero-text > h1 {
+        font-size: 4em;
+        line-height: normal;
+    }
+
+    .hero {
+        padding: 5em;
+    }
+
+    .main-wrapper {
+        padding: 0 1.2em;
+    }
+
+    .hero-desc {
+        width: 30ch;
+    }
+
+    .hero-img-container {
+        position: relative;
+    }
+
+    .hero-img {
+        width: 150px;
+        height: 230px;
+    }
+
+    .hero-img-one {
+        left: 46px;
+    }
+
+    .hero-img-two {
+        right: -89px;
+    }
+
+    .hero-img-three {
+        right: 8px;
+    }
+
+    .hero-img-four {
+        bottom: -417px;
+    }
+
+    .hero-img-five {
+        bottom: -433px;
+    }
+}
