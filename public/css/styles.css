@@ -281,6 +281,10 @@ from > input {
     nav > ul > li > a {
         display: none;
     }
+    
+    .signup-btn {
+        display: none;
+    }
 
     .core-values {
         display: inline;

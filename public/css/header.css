@@ -1,3 +1,11 @@
+/* .loader {
+    z-index: 99;
+    position: fixed;
+    background: white;
+    width: 100vw;
+    height: 100vh;
+} */
+
 .hero {
     display: flex;
     justify-content: center;
@@ -23,7 +31,7 @@
 }
 
 .main-hero-img {
-    z-index: -2;
+    z-index: 100;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,8 +41,9 @@
 
 .big-img {
     position: absolute;
-    width: 45em;
-    height: 30em;
+    top: 32px;
+    width: 66em;
+    height: 51em;
     object-fit: cover;
 }
 
