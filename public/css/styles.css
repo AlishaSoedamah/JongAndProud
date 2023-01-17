@@ -44,7 +44,9 @@ h3 {
 
 nav > ul {
     display: flex;
-    /* justify-content: space-between; */
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
 }
 
 nav > ul > li {
@@ -65,20 +67,13 @@ nav > ul > li > a:hover,
 }
 
 /* BUTTONS */
-.login-btn {
-    list-style: none;
-    text-decoration: none;
-    background-color: pink;
-    color: var(--primary-color);
-    border-radius: 0.2em;
-}
-
 .signup-btn {
     list-style: none;
     text-decoration: none;
     background-color: #f7e0bc;
     color: var(--secondary-color);
     border-radius: 0.2em;
+    padding: 10px;
 }
 
 .cta-btn {

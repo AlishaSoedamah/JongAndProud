@@ -12,22 +12,24 @@
         @include('templates/header')
         <div class="main-wrapper">
         <section class="hero fancy-hero-text">
-          <div class="hero-img-container">
-            <img class="hero-img hero-img-one" src="{{ asset('images/card1.jpeg') }}" alt="">
-            <img class="hero-img hero-img-two" src="{{ asset('images/card2.jpeg') }}" alt="">
-            <img class="hero-img hero-img-three" src="{{ asset('images/card3.jpeg') }}" alt="">
-            <img class="hero-img hero-img-four" src="{{ asset('images/card4.jpeg') }}" alt="">
-            <img class="hero-img hero-img-five" src="{{ asset('images/card5.png') }}" alt="">
+          <div class="main-hero-img">
+          <img class="big-img" src="{{ asset('images/card5.jpeg') }}" alt="">
+          <!-- When loading done turn opacity to 0 & display: none-->
+            <div class="loader img-container">
+              <img class="hero-img hero-img-two" src="{{ asset('images/card2.jpeg') }}" alt="">
+              <img class="hero-img hero-img-three" src="{{ asset('images/card3.jpeg') }}" alt="">
+              <img class="hero-img hero-img-four" src="{{ asset('images/card4.jpeg') }}" alt="">
+              <img class="hero-img hero-img-five" src="{{ asset('images/card1.jpeg') }}" alt="">
+            </div>
           </div>
           <h1>Jong</h1>
-          <h1>&</h1>
-          <h1>Proud</h1>
-          <div class="desc-block">
-            <p class="hero-desc">Jong & Proud is een werkgroep binnen het COC Midden Nederland voor 
+          <h1>& Proud</h1>
+        <div class="desc-block">
+          <p class="hero-desc">Jong & Proud is een werkgroep binnen het COC Midden Nederland voor 
               LHBTIQ+ jongvolwassenen tussen 18 en 30 jaar in Amersfoort.
-            </p>
-          </div>
-          <button class="cta-btn">Lid worden?</button>
+          </p>
+        </div>
+        <button class="cta-btn">Lid worden?</button> 
         </section>
         <section class="quote-container">
           <div class="quote-block">
