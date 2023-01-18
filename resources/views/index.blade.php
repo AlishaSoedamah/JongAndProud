@@ -12,21 +12,23 @@
         @include('templates/header')
         <div class="main-wrapper">
         <section class="hero fancy-hero-text">
-          <h1>Jong</h1>
-          <h1>& Proud</h1>
+          <h1 class="fancy-text">Jong</h1>
+          <h1 class="fancy-text">& Proud</h1>
           <div class="desc-block">
             <p class="hero-desc">Jong & Proud is een werkgroep binnen het COC Midden Nederland voor 
                 LHBTIQ+ jongvolwassenen tussen 18 en 30 jaar in Amersfoort.
             </p>
           </div>
-          <div class="loader main-hero-img">
+          <div class="main-hero-img">
           <img class="big-img" src="{{ asset('images/card5.jpeg') }}" alt="">
           <!-- When loading done turn opacity to 0 & display: none-->
-            <div class="img-container">
-              <!-- <img class="hero-img hero-img-two" src="{{ asset('images/card2.jpeg') }}" alt="">
-              <img class="hero-img hero-img-three" src="{{ asset('images/card3.jpeg') }}" alt="">
-              <img class="hero-img hero-img-four" src="{{ asset('images/card4.jpeg') }}" alt="">
-              <img class="hero-img hero-img-five" src="{{ asset('images/card1.jpeg') }}" alt=""> -->
+            <div class="loader-wrapper">
+              <div id="loader">
+                <img class="hero-img hero-img-two" src="{{ asset('images/card2.jpeg') }}" alt="">
+                <img class="hero-img hero-img-three" src="{{ asset('images/card3.jpeg') }}" alt="">
+                <img class="hero-img hero-img-four" src="{{ asset('images/card4.jpeg') }}" alt="">
+                <img class="hero-img hero-img-five" src="{{ asset('images/card1.jpeg') }}" alt="">
+              </div>
             </div>
           </div>
         <!-- <button class="cta-btn">Lid worden?</button>  -->
@@ -53,7 +55,7 @@
             <div class="big-widget">
               <h3>Veilige plek creëen</h3>
               <p>Niet bang hoeven zijn om jezelf te kunnen zijn</p>
-              <img src="././images/Rainbow-flag-sky.webp" alt="The rainbow flag">
+              <img src="{{ asset('images/Rainbow-flag-sky.webp') }}" alt="The rainbow flag">
             </div>
             <div class="small-left-widget">
               <h3>Activiteiten organiseren</h3>

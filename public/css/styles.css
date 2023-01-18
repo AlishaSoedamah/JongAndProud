@@ -109,7 +109,8 @@ nav > ul > li > a:hover,
 }
 
 /* HOME PAGE */
-.quote-containe {
+.quote-container {
+    padding-top: 35em;
     display: relative;
 }
 
@@ -281,7 +282,7 @@ from > input {
     nav > ul > li > a {
         display: none;
     }
-    
+
     .signup-btn {
         display: none;
     }
@@ -289,9 +290,17 @@ from > input {
     .core-values {
         display: inline;
     }
+
+    .big-widget > img{
+        width: 100px;
+    }
 }
 
 @media screen and (max-width: 480px) {
+    .quote-container {
+        padding-top: 5em;
+    }
+
     .main-wrapper {
         padding: 0 1.2em;
     }

@@ -1,10 +1,35 @@
-/* .loader {
-    z-index: 99;
+.loader-wrapper {
     position: fixed;
-    background: white;
-    width: 100vw;
-    height: 100vh;
-} */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: var(--primary-color);
+}
+
+/*  Loaded styles */
+.loaded {
+    -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(-100%);  /* IE 9 */
+    transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+}
+
+.hero-img-two {
+    top: 0px;
+}
+
+.hero-img-three {
+    right: 0px;
+}
+
+.hero-img-four {
+    bottom: -0;
+}
+
+.hero-img-five {
+    left: 0px;
+}
 
 .hero {
     display: flex;
@@ -43,7 +68,7 @@
     position: absolute;
     top: 32px;
     width: 66em;
-    height: 51em;
+    height: 40em;
     object-fit: cover;
 }
 
@@ -56,21 +81,6 @@
     object-fit: cover;
 }
 
-.hero-img-two {
-    top: 0px;
-}
-
-.hero-img-three {
-    top: 0px;
-}
-
-.hero-img-four {
-    bottom: -0;
-}
-
-.hero-img-five {
-    bottom: 0px;
-}
 
 @media screen and (max-width: 600px){
     .fancy-hero-text > h1 {
@@ -90,6 +100,14 @@
 }
 
 @media screen and (max-width: 480px) {
+    .big-img {
+        position: absolute;
+        top: 32px;
+        width: 300px;
+        height:  100px;
+        object-fit: cover;
+    }
+
     .fancy-hero-text > h1 {
         font-size: 4em;
         line-height: normal;
