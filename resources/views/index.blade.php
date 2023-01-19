@@ -13,8 +13,10 @@
         @include('templates/header')
         <div class="main-wrapper">
         <section class="hero fancy-hero-text">
-          <h1 class="fancy-text">Jong</h1>
-          <h1 class="fancy-text">& Proud</h1>
+          <div class="animated-letters">
+            <h1 class="fancy-text">Jong</h1>
+            <h1 class="fancy-text">& Proud</h1>
+          </div>
           <div class="desc-block">
             <p class="hero-desc">Jong & Proud is een werkgroep binnen het COC Midden Nederland voor 
                 LHBTIQ+ jongvolwassenen tussen 18 en 30 jaar in Amersfoort.

@@ -8,9 +8,9 @@
     background-color: var(--primary-color);
 }
 
-.fancy-text {
+/* .fancy-text {
     z-index: 100000;
-}
+} */
 /*  Loaded styles */
 .loaded {
    opacity: 0;
@@ -78,7 +78,7 @@
     padding: 2em 0em 12em 0em;
 }
 
-.fancy-hero-text > h1 {
+.animated-letters > h1 {
     font-size: 10em;
     margin: 0;
     line-height: 160px;
@@ -104,7 +104,7 @@
 }
 
 @media screen and (max-width: 600px){
-    .fancy-hero-text > h1 {
+    .animated-letters > h1 {
         font-size: 6em;
         line-height: 104px;
         padding-bottom: 30px;
@@ -116,7 +116,7 @@
 }
 
 @media screen and (max-width: 480px) {
-    .fancy-hero-text > h1 {
+    .animated-letters > h1 {
         font-size: 4em;
         line-height: normal;
     }
@@ -136,9 +136,10 @@
 
 /* KEYFRAMES */
 @keyframes scaleImg {
-    0% {top: -20em;
-        width: 33em;
-        height: 20em;
+    0% {
+        top: -20em;
+        width: 35em;
+        height: 23em;
         opacity: 0;
     }
     40% {
@@ -159,13 +160,14 @@
 @keyframes imgTwo {
     0% {
         opacity: 0;
-        top: 120px;
+        top: 160px;
     }
-    50% {
+    10% {
         opacity: 1;
         top: 100px;
     }
-    95% {
+    60% {
+        opacity: 1;
         top: 63px;
     }
     100% {
@@ -199,7 +201,7 @@
     }
     10% {
         opacity: 0;
-        bottom: 60px
+        bottom: 30px
     }
     50% {
         opacity: 1;
@@ -219,7 +221,7 @@
     }
     7% {
         opacity: 0;
-        top: 150px;
+        top: 200px;
     }
     50% {
         opacity: 1;
