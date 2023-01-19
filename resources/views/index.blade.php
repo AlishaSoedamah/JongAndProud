@@ -6,6 +6,7 @@
         <title>Home Jong & Proud 🏳️‍🌈</title>
         <link href="{{ asset('css/styles.css') }}" rel="stylesheet" type="text/css" >
         <link href="{{ asset('css/header.css') }}" rel="stylesheet" type="text/css" >
+        <script type="module" src="{{ URL::asset('scripts/animations.js') }}"></script>
         <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.png') }}">
     </head>
     <body>
@@ -21,15 +22,14 @@
           </div>
           <div class="main-hero-img">
           <img class="big-img" src="{{ asset('images/card5.jpeg') }}" alt="">
-          <!-- When loading done turn opacity to 0 & display: none-->
-            <div class="loader-wrapper">
-              <div id="loader">
-                <img class="hero-img hero-img-two" src="{{ asset('images/card2.jpeg') }}" alt="">
-                <img class="hero-img hero-img-three" src="{{ asset('images/card3.jpeg') }}" alt="">
-                <img class="hero-img hero-img-four" src="{{ asset('images/card4.jpeg') }}" alt="">
-                <img class="hero-img hero-img-five" src="{{ asset('images/card1.jpeg') }}" alt="">
-              </div>
+          <div id="loader-wrapper">
+            <div class="loader">
+              <img class="hero-img hero-img-two" src="{{ asset('images/card2.jpeg') }}" alt="">
+              <img class="hero-img hero-img-three" src="{{ asset('images/card3.jpeg') }}" alt="">
+              <img class="hero-img hero-img-four" src="{{ asset('images/card4.jpeg') }}" alt="">
+              <img class="hero-img hero-img-five" src="{{ asset('images/card1.jpeg') }}" alt="">
             </div>
+          </div>
           </div>
         <!-- <button class="cta-btn">Lid worden?</button>  -->
         </section>
