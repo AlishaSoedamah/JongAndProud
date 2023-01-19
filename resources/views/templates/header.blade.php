@@ -7,7 +7,7 @@
         <li><a href="/gallery">Galerij</a></li>
         <li><a href="/team">Team</a></li>
         <li><a href="/contact">Contact</a></li>
-        <li class="login-btn" ><a href="/login">Log in</a></li>
+        <li><a href="/login">Log in</a></li>
         <li class="signup-btn" ><a href="/sign-up">Aanmelden</a></li>
     </ul>
 </nav>
