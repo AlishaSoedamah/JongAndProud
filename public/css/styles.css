@@ -38,6 +38,11 @@ h3 {
 }
 
 /* NAV */
+.nav {
+    display: flex;
+    flex-direction: column;
+}
+
 .logo {
     width: 90px;
 }
@@ -118,19 +123,19 @@ nav > ul > li > a:hover,
     display: flex;
     align-items: center;
     flex-direction: column;
-    position: relative;
     background-color: light-gray;
   }
 
-  .quote {
-      font-size: 2em;
+.quote {
+    font-size: 1.2em;
+    position: relative;
   }
   
-  blockquote {
+blockquote {
     width: 40ch;
   }
   
-  blockquote::before {
+blockquote::before {
     content: "‘‘";
     font-family: 'Frank Ruhl Libre';
     z-index: -1;
@@ -138,11 +143,11 @@ nav > ul > li > a:hover,
     position: absolute;
     color: pink;
     opacity: 0.7;
-    top: -110px;
-    left: 300px;
+    top: -114px;
+    left: -19px;
 }
 
-  blockquote::after {
+blockquote::after {
       content: "”";
       font-family: 'Frank Ruhl Libre';
       z-index: -1;
@@ -150,13 +155,17 @@ nav > ul > li > a:hover,
       position: absolute;
       color: pink;
       opacity: 0.7;
-      top: -30px;
-      right: 370px;
+      top: 50px;
+      right: 0;
   }
+
+.text-container {
+    width: 60ch;
+}
 
 .core-values {
     display: grid; 
-    gap: 10px 0; 
+    gap: 1em; 
     grid-template-areas: 
         "bigCenter bigCenter"
         "smallLeft smallRight"; 
@@ -180,12 +189,17 @@ nav > ul > li > a:hover,
     border-radius: var(--border-radius);;
 }
 
-.this-is-an-img {
-    border-radius: var(--border-radius);
-    aspect-ratio: 6;
-    background: burlywood;
+.big-widget > img {
+    width: 10em;
 }
 
+.small-left-widget > img {
+    width: 10em;
+}
+
+.small-right-widget > img {
+    width: 10em;
+}
 /* ACTIVITIES */
 .calendar {
     outline: 2px red solid;
@@ -257,11 +271,6 @@ from > input {
     align-items: center;
 }
 
-.nav {
-    display: flex;
-    flex-direction: column;
-}
-
 @media screen and (max-width: 600px){
     h1 {
         font-size: 2.5em;
@@ -287,6 +296,22 @@ from > input {
         display: none;
     }
 
+    blockquote {
+        width: 35ch;
+    }
+
+    blockquote::before {
+        content: "‘‘";
+        top: -108px;
+        left: -36px;
+    }
+
+    blockquote::after {
+        content: "”";
+        top: 65px;
+        right: -17px;
+    }
+
     .core-values {
         display: inline;
     }
@@ -294,11 +319,23 @@ from > input {
     .big-widget > img{
         width: 100px;
     }
+
+    .big-widget > img{
+        width: 100px;
+    }
+
+    .text-container {
+        width: auto;
+    }
 }
 
 @media screen and (max-width: 480px) {
     .quote-container {
         padding-top: 5em;
+    }
+
+    .hero-desc {
+        width: 30ch;
     }
 
     .main-wrapper {
@@ -311,19 +348,19 @@ from > input {
     }
 
     blockquote {
-        width: 33ch;
+        width: 30ch;
     }
 
     blockquote::before {
         content: "‘‘";
-        top: -64px;
-        left: -11px;
+        top: -85px;
+        left: -13px;
     }
 
     blockquote::after {
         content: "”";
-        top: 42px;
-        right: -3px;
+        top: 71px;
+        right: 10px;
     }
 
     .footer-container {
@@ -343,13 +380,13 @@ from > input {
   
       blockquote::before {
           content: "‘‘";
-          top: -64px;
-          left: -11px;
+          top: -88px;
+          left: -24px;
       }
   
       blockquote::after {
           content: "”";
-          top: 42px;
-          right: -3px;
+          top: 91px;
+          right: -7px;
       }
 }

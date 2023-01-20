@@ -33,7 +33,7 @@
             </div>
           </div>
           </div>
-        <!-- <button class="cta-btn">Lid worden?</button>  -->
+        <button class="cta-btn">Lid worden?</button> 
         </section>
         <section class="quote-container">
           <div class="quote-block">
@@ -62,12 +62,12 @@
             <div class="small-left-widget">
               <h3>Activiteiten organiseren</h3>
               <p>Plezier hebben met elkaar</p>
-              <div class="this-is-an-img"></div>
+              <img src="{{ asset('images/Rainbow-flag-sky.webp') }}" alt="The rainbow flag">
             </div>
             <div class="small-right-widget">
               <h3>Connecties maken</h3>
               <p>Leer andere mensen in dezelfde community kennen</p>
-              <div class="this-is-an-img"></div>
+              <img src="{{ asset('images/Rainbow-flag-sky.webp') }}" alt="The rainbow flag">
           </div>
           </div>
         </article>

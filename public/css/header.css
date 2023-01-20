@@ -23,7 +23,7 @@
     z-index: 100000;
     position: absolute;
     border-radius: var(--border-radius);
-    top: 32px;
+    top: 90px;
     width: 66em;
     height: 40em;
     object-fit: cover;
@@ -43,7 +43,8 @@
     right: 230px;
     width: 235px;
     height: 217px;
-    animation: imgTwo 6s ease-out;
+    animation: imgTwo 6s;
+    transition-timing-function: cubic-bezier(0.94, -0.01, 1, 0);
 }
 
 .hero-img-three {
@@ -51,7 +52,8 @@
     right: 235px;
     width: 186px;
     height: 295px;
-    animation: imgThree 6s ease-out;
+    animation: imgThree 6s;
+    transition-timing-function: cubic-bezier(0.94, -0.01, 1, 0);
 }
 
 .hero-img-four {
@@ -59,7 +61,8 @@
     height: 145px;
     bottom: 92px;
     left: 270px;
-    animation: imgFour 6s ease-out;
+    animation: imgFour 6s;
+    transition-timing-function: cubic-bezier(0.15, 0.81, 1, 0);
 }
 
 .hero-img-five {
@@ -67,7 +70,8 @@
     top: 90px;
     width: 182px;
     height: 263px;
-    animation: imgFive 6s ease-out;
+    animation: imgFive 6s;
+    transition-timing-function: cubic-bezier(0.15, 0.81, 1, 0);
 }
 
 .hero {
@@ -137,9 +141,12 @@
 /* KEYFRAMES */
 @keyframes scaleImg {
     0% {
-        top: -20em;
-        width: 35em;
-        height: 23em;
+        opacity: 0;
+    }
+    30% {
+        top: -10em;
+        width: 33em;
+        height: 20em;
         opacity: 0;
     }
     40% {
@@ -151,7 +158,7 @@
         height: 20em
     }
     100% { 
-        top: 32px;
+        top: 90px;
         width: 66em;
         height: 40em;
     }
