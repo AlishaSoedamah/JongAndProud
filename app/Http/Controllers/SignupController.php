@@ -11,4 +11,24 @@ class SignupController extends Controller
     {
         return view('sign-up');
     }
+
+    public function postUser(Request $request)
+    {
+        //data from the forms
+        $formData = $request->all();
+        $name = $formData['name'];
+        $email = $formData['email'];
+        $password = $formData['password'];
+
+        //password hash
+        $encryptedPassword = Hash::make($password);
+
+        //insert data into db
+        User::create([
+            "name" => $name,
+            "email" => $email,
+            "password" => $encryptedPassword,
+        ]);
+        return redirect('/');
+    }
 }

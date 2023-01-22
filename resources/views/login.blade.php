@@ -11,7 +11,7 @@
         <div class="main-wrapper"> 
         @include('templates/header')
           <h1>Login</h1>
-          <form action="/login" method="POST">
+          <form action="/login" method="post">
             @csrf {{ csrf_field() }}
             <button class="google-btn">Login with Google?</button>
             <label for="email">Email</label>

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Home Jong & Proud 🏳️‍🌈</title>
+        <title>Home Jong & Proud 🏳️‍🌈 🏳️‍⚧️</title>
         <link href="{{ asset('css/styles.css') }}" rel="stylesheet" type="text/css" >
         <link href="{{ asset('css/header.css') }}" rel="stylesheet" type="text/css" >
         <script type="module" src="{{ URL::asset('scripts/animations.js') }}"></script>
@@ -17,7 +17,7 @@
             <h1 class="fancy-text">Jong</h1>
             <h1 class="fancy-text">& Proud</h1>
           </div>
-          <!-- <div class="desc-block">
+          <div class="desc-block">
             <p class="hero-desc">Jong & Proud is een werkgroep binnen het COC Midden Nederland voor 
                 LHBTIQ+ jongvolwassenen tussen 18 en 30 jaar in Amersfoort.
             </p>
@@ -32,7 +32,7 @@
               <img class="hero-img hero-img-five" src="{{ asset('images/card1.jpeg') }}" alt="">
             </div>
           </div>
-          </div> -->
+          </div> 
         <button class="main-btn">Lid worden?</button> 
         </section>
         <section class="quote-container">

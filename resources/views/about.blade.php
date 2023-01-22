@@ -10,9 +10,9 @@
     <body>
         <div class="main-wrapper">
         @include('templates/header')
-          <h1>Over ons</h1>
           <div class="about-container">
             <div class="about-row-left">
+              <h1>Over ons</h1>
               <p>Jong & Proud organiseert om de maand een 
                 activiteit. Deze activiteiten zijn bedoelt om plezier 
                 te maken met elkaar of lekker en nieuwe LHBTI+ 
@@ -30,6 +30,7 @@
                 activiteiten, verder Iedereen is welkom en wij 
                 ver welkomen allen om lid te worden.
               </p>
+              <button class="main-btn">Lid worden?</button> 
             </div>
             <div class="about-row-right">
               <img class="about-img" src="{{ asset('images/logo.png') }}" alt="Jong & Proud logo">

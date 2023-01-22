@@ -11,27 +11,25 @@
     <body>
         <div class="main-wrapper">
         @include('templates/header')
-          <h1>Activiteiten</h1>
-          <div class="wrapper">
-        <header>
-          <p class="current-date"></p>
-          <div class="icons">
-            <span id="prev" class="material-symbols-rounded"><</span>
-            <span id="next" class="material-symbols-rounded">></span>
-          </div>
-          </header>
-            <div class="calendar">
-              <ul class="weeks">
-                <li>Sun</li>
-                <li>Mon</li>
-                <li>Tue</li>
-                <li>Wed</li>
-                <li>Thu</li>
-                <li>Fri</li>
-                <li>Sat</li>
-              </ul>
-              <ul class="days"></ul>
-            </div>
+        <h1>Activiteiten</h1>
+        <div class="container">
+          <h3><a href="?ym=<?php echo $prev; ?>">&lt;</a> <?php echo $html_title; ?> <a href="?ym=<?php echo $next; ?>">&gt;</a></h3>
+          <table class="table table-bordered">
+            <tr>
+              <th>Z</th>
+              <th>M</th>
+              <th>D</th>
+              <th>W</th>
+              <th>D</th>
+              <th>V</th>
+              <th>Z</th>
+              </tr>
+              <?php
+                foreach ($weeks as $week) {
+                  echo $week;
+                }
+              ?>
+          </table>
           </div>
           <div class="dates">
             <div class="row1">
