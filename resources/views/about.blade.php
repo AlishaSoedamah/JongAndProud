@@ -8,27 +8,33 @@
         <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.png') }}">
     </head>
     <body>
-        @include('templates/header')
         <div class="main-wrapper">
+        @include('templates/header')
           <h1>Over ons</h1>
-          <p>Jong & Proud organiseert om de maand een 
-             activiteit. Deze activiteiten zijn bedoelt om plezier 
-             te maken met elkaar of lekker en nieuwe LHBTI+ 
-             mensen te leren kennen. 
-          </p>
-          <p>
-            Jong & Proud creëer t een veilige plek voor LHBTI+ 
-            jong volwassen tussen de 18 en 30 jaar. 
-            Niet alleen organiseren wij activiteiten voor plezier 
-            en veiligheid maar we hebben ook veel educatieve 
-            mogelijkheden gepland staan! 
-          </p>
-          <p>
-            Voor de Jong & Proud leden zijn er enkele privé 
-            activiteiten, verder Iedereen is welkom en wij 
-            ver welkomen allen om lid te worden.
-          </p>
-          <img src="{{ asset('images/logo.png') }}" alt="Het Jong & Proud logo">
+          <div class="about-container">
+            <div class="about-row-left">
+              <p>Jong & Proud organiseert om de maand een 
+                activiteit. Deze activiteiten zijn bedoelt om plezier 
+                te maken met elkaar of lekker en nieuwe LHBTI+ 
+                mensen te leren kennen. 
+              </p>
+              <p>
+                Jong & Proud creëer t een veilige plek voor LHBTI+ 
+                jong volwassen tussen de 18 en 30 jaar. 
+                Niet alleen organiseren wij activiteiten voor plezier 
+                en veiligheid maar we hebben ook veel educatieve 
+                mogelijkheden gepland staan! 
+              </p>
+              <p>
+                Voor de Jong & Proud leden zijn er enkele privé 
+                activiteiten, verder Iedereen is welkom en wij 
+                ver welkomen allen om lid te worden.
+              </p>
+            </div>
+            <div class="about-row-right">
+              <img class="about-img" src="{{ asset('images/logo.png') }}" alt="Jong & Proud logo">
+            </div>
+          </div>
         @include('templates/footer')
         </div>
     </body>

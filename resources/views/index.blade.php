@@ -10,8 +10,8 @@
         <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.png') }}">
     </head>
     <body>
-        @include('templates/header')
         <div class="main-wrapper">
+        @include('templates/header')
         <section class="hero fancy-hero-text">
           <div class="animated-letters">
             <h1 class="fancy-text">Jong</h1>

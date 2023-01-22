@@ -8,8 +8,8 @@
         <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.png') }}">
     </head>
     <body>
-        @include('templates/header')
         <div class="main-wrapper">
+        @include('templates/header')
           <h1>Contact</h1>
           <form action="" method="post">
             <label for="name">Name:</label><br>

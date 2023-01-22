@@ -8,10 +8,11 @@
         <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.png') }}">
     </head>
     <body>
+        <div class="main-wrapper"> 
         @include('templates/header')
-        <div class="main-wrapper">
           <h1>Login</h1>
-          <form>
+          <form action="/login" method="POST">
+            @csrf {{ csrf_field() }}
             <button class="google-btn">Login with Google?</button>
             <label for="email">Email</label>
             <input type="text" placeholder="Enter Email" name="email" required>
