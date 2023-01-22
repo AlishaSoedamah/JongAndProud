@@ -66,34 +66,18 @@ nav > ul > li > a {
 
 nav > ul > li > a:hover,
 .login-btn,
-.signup-btn,
-.cta-btn {
+.signup-btn
+{
     cursor: pointer;
 }
 
 /* BUTTONS */
-.signup-btn {
-    list-style: none;
-    text-decoration: none;
-    background-color: #f7e0bc;
-    color: var(--secondary-color);
-    border-radius: 0.2em;
-    padding: 10px;
-}
-
-.cta-btn {
-    border: 2px solid black;
-    background: pink;
-    padding: 10px;
-    font-size: 1.2em;
-    border-radius: 0.2em;
-}
-
 .main-btn {
-    background: purple;
+    border: 2px solid var(--secondary-color);
+    background: white;
     padding: 10px;
-    font-size: 1.2em;
-    border-radius: 0.2em;
+    border-radius: 5px;
+    box-shadow: 5px 5px 0 var(--secondary-color);
 }
 
 .google-btn {
@@ -107,8 +91,6 @@ nav > ul > li > a:hover,
 
 .google-btn:hover,
 .login-btn:hover,
-.signup-btn:hover,
-.cta-btn:hover,
 .main-btn:hover {
     cursor: pointer;
 }
@@ -172,9 +154,14 @@ blockquote::after {
 }
 
 .big-widget {
+    display: flex;
     grid-area: bigCenter;
     background-color: #ffd8f3;
     border-radius: var(--border-radius);
+}
+
+.right-img-values > img {
+    width: 50em;
 }
 
 .small-left-widget {
@@ -200,10 +187,8 @@ blockquote::after {
 .small-right-widget > img {
     width: 10em;
 }
+
 /* ACTIVITIES */
-.calendar {
-    outline: 2px red solid;
-}
 .dates {
     display: flex; 
 }
@@ -213,14 +198,102 @@ blockquote::after {
 }
 
 .dates > div > p > span::after {
-    content: "";
+    content: " ";
     z-index: -1;
     position: absolute;
     background: #ff7bc4;
     padding: 15px;
     border-radius: 40px;
-    margin-right: 0.5em;
+    margin-left: -21px;
 }
+
+.wrapper{
+    width: 450px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+  }
+  .wrapper header{
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: space-between;
+  }
+  header .icons{
+    display: flex;
+  }
+  header .icons span{
+    height: 38px;
+    width: 38px;
+    margin: 0 1px;
+    cursor: pointer;
+    color: #878787;
+    text-align: center;
+    line-height: 38px;
+    font-size: 1.9rem;
+    user-select: none;
+    border-radius: 50%;
+  }
+  .icons span:last-child{
+    margin-right: -10px;
+  }
+  header .icons span:hover{
+    background: #f2f2f2;
+  }
+  header .current-date{
+    font-size: 1.45rem;
+    font-weight: 500;
+  }
+  .calendar{
+    padding: 20px;
+  }
+  .calendar ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+  }
+  .calendar .days{
+    margin-bottom: 20px;
+  }
+  .calendar li{
+    color: #333;
+    width: calc(100% / 7);
+    font-size: 1.07rem;
+  }
+  .calendar .weeks li{
+    font-weight: 500;
+    cursor: default;
+  }
+  .calendar .days li{
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    margin-top: 30px;
+  }
+  .days li.inactive{
+    color: #aaa;
+  }
+  .days li.active{
+    color: #fff;
+  }
+  .days li::before{
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .days li.active::before{
+    background: #9B59B6;
+  }
+  .days li:not(.active):hover::before{
+    background: #f2f2f2;
+  }
 
 /* ABOUT */
 .about-container {
@@ -243,7 +316,6 @@ blockquote::after {
     width: 30em;
 }
 
-/* TEAM */
 .team {
     display: grid;
     grid-gap: 5em;
@@ -279,6 +351,7 @@ input {
     padding: 10px;
 }
 /* GALLERY */
+
 /* LOGIN & SIGNUP*/
 form {
     display: flex;
@@ -337,7 +410,7 @@ from > input {
         display: none;
     }
 
-    .signup-btn {
+    .main-btn {
         display: none;
     }
 

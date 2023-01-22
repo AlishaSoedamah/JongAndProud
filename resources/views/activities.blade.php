@@ -6,18 +6,37 @@
         <title>Activiteiten</title>
         <link href="{{ asset('css/styles.css') }}" rel="stylesheet" type="text/css" >
         <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.png') }}">
+        <script type="module" src="{{ URL::asset('scripts/animations.js') }}"></script>
     </head>
     <body>
         <div class="main-wrapper">
         @include('templates/header')
           <h1>Activiteiten</h1>
-          <div class="calendar">
-            <p>this will be a calender</p>
+          <div class="wrapper">
+        <header>
+          <p class="current-date"></p>
+          <div class="icons">
+            <span id="prev" class="material-symbols-rounded"><</span>
+            <span id="next" class="material-symbols-rounded">></span>
+          </div>
+          </header>
+            <div class="calendar">
+              <ul class="weeks">
+                <li>Sun</li>
+                <li>Mon</li>
+                <li>Tue</li>
+                <li>Wed</li>
+                <li>Thu</li>
+                <li>Fri</li>
+                <li>Sat</li>
+              </ul>
+              <ul class="days"></ul>
+            </div>
           </div>
           <div class="dates">
             <div class="row1">
-              <p><span>19</span>feb</p>
-              <p><span>11</span>maa</p>
+              <p><span>19</span> feb</p>
+              <p><span>11</span> maa</p>
               <p><span>15</span>apr</p>
               <p><span>20</span>mei</p>
               <p><span>nvt</span>jun</p>
@@ -31,9 +50,9 @@
               <p><span>25</span>nov</p>
               <p><span>16</span>dec</p>
             </div>
+            <p>Meld je hier aan voor de komende activiteit deze maand!</p>
+            <button class="main-btn">Meld je aan!</button>
           </div>
-          <p>Meld je hier aan voor de komende activiteit deze maand!</p>
-          <button>Meld je aan!</button>
         @include('templates/footer')
         </div>
     </body>

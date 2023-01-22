@@ -17,7 +17,7 @@
             <h1 class="fancy-text">Jong</h1>
             <h1 class="fancy-text">& Proud</h1>
           </div>
-          <div class="desc-block">
+          <!-- <div class="desc-block">
             <p class="hero-desc">Jong & Proud is een werkgroep binnen het COC Midden Nederland voor 
                 LHBTIQ+ jongvolwassenen tussen 18 en 30 jaar in Amersfoort.
             </p>
@@ -32,8 +32,8 @@
               <img class="hero-img hero-img-five" src="{{ asset('images/card1.jpeg') }}" alt="">
             </div>
           </div>
-          </div>
-        <button class="cta-btn">Lid worden?</button> 
+          </div> -->
+        <button class="main-btn">Lid worden?</button> 
         </section>
         <section class="quote-container">
           <div class="quote-block">
@@ -55,9 +55,13 @@
           </div>
           <div class="core-values">
             <div class="big-widget">
-              <h3>Veilige plek creëen</h3>
-              <p>Niet bang hoeven zijn om jezelf te kunnen zijn</p>
-              <img src="{{ asset('images/Rainbow-flag-sky.webp') }}" alt="The rainbow flag">
+              <div class="core-values-text">
+                <h3>Veilige plek creëen</h3>
+                <p>Niet bang hoeven zijn om jezelf te kunnen zijn</p>
+              </div>
+              <div class="right-img-values">
+                <img src="{{ asset('images/Rainbow-flag-sky.webp') }}" alt="The rainbow flag">
+              </div>
             </div>
             <div class="small-left-widget">
               <h3>Activiteiten organiseren</h3>
@@ -77,7 +81,7 @@
              Als u zich aanmeld ontvangt u een email met informatie. Nadat wij de aanmelding hebben 
              bevestigd kunt u een account aanmaken op de website waardoor u altijd op de hoogte wordt gehouden 
              met de nieuwste activiteiten en meer!</p>
-          <button class="cta-btn">Ik wil lid worden</button>
+          <button class="main-btn">Ik wil lid worden</button>
         </section>
         @include('templates/footer')
       </div>
