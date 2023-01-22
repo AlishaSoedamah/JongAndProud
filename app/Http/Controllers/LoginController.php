@@ -5,8 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use App\Models\Product;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Hash;
 
 class LoginController extends Controller
 {
@@ -41,6 +41,7 @@ class LoginController extends Controller
         //go back to the homepage
         return redirect('/');
     }
+
     public function logout()
     {
 

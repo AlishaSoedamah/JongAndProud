@@ -18,6 +18,7 @@
             <input type="text" placeholder="Enter Email" name="email" required>
             <label for="password">Password</label>
             <input type="password" placeholder="Enter Password" name="password" required>
+            <input type="submit">
             <a href="/sign-up">Not a member? Click here.</a>
           </form>
         @include('templates/footer')
