@@ -13,7 +13,6 @@
         @include('templates/header')
         <h1>Activiteiten</h1>
         <div class="container">
-          <h3><a href="?ym=<?php echo $prev; ?>">&lt;</a> <?php echo $html_title; ?> <a href="?ym=<?php echo $next; ?>">&gt;</a></h3>
           <table class="table table-bordered">
             <tr>
               <th>Z</th>
@@ -24,11 +23,6 @@
               <th>V</th>
               <th>Z</th>
               </tr>
-              <?php
-                foreach ($weeks as $week) {
-                  echo $week;
-                }
-              ?>
           </table>
           </div>
           <div class="dates">

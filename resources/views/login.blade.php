@@ -11,15 +11,15 @@
         <div class="main-wrapper"> 
         @include('templates/header')
           <h1>Login</h1>
-          <form action="/login" method="post">
+          <form action="/login" method="POST">
             @csrf {{ csrf_field() }}
-            <button class="google-btn">Login with Google?</button>
+            <button class="google-btn">Login with Google</button>
             <label for="email">Email</label>
-            <input type="text" placeholder="Enter Email" name="email" required>
-            <label for="password">Password</label>
-            <input type="password" placeholder="Enter Password" name="password" required>
-            <input type="submit">
-            <a href="/sign-up">Not a member? Click here.</a>
+            <input type="text" name="email" required>
+            <label for="password">Wachtwoord</label>
+            <input type="password" name="password" required>
+            <input class="submit-btn" type="submit">
+            <a href="/sign-up">Nog geen lid? Klik hier</a>
           </form>
         @include('templates/footer')
         </div>

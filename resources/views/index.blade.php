@@ -33,7 +33,7 @@
             </div>
           </div>
           </div> 
-        <button class="main-btn">Lid worden?</button> 
+        <button class="main-btn" href="/sign-up">Lid worden?</button> 
         </section>
         <section class="quote-container">
           <div class="quote-block">
@@ -81,7 +81,7 @@
              Als u zich aanmeld ontvangt u een email met informatie. Nadat wij de aanmelding hebben 
              bevestigd kunt u een account aanmaken op de website waardoor u altijd op de hoogte wordt gehouden 
              met de nieuwste activiteiten en meer!</p>
-          <button class="main-btn">Ik wil lid worden</button>
+          <button class="main-btn" href="/sign-up">Ik wil lid worden</button>
         </section>
         @include('templates/footer')
       </div>

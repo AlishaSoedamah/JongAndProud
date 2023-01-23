@@ -11,18 +11,18 @@
         <div class="main-wrapper">
         @include('templates/header')
           <h1>Sign up</h1>
-          <form action="/sign-up" method="post">
+          <form action="/sign-up" method="POST">
             @csrf {{ csrf_field() }}
-            <button class="google-btn">Sign up with Google?</button>
-            <label for="email">Email</label>
-            <input type="email" placeholder="Enter Email" name="email" required>
-            <label for="email">Naam</label>
-            <input type="text" placeholder="Enter name" name="name" required>
-            <label for="password">Wachtwoord</label>
-            <input type="password" placeholder="Enter Password" name="password" required>
-            <label for="repeatPassword">Herhaal wachtwoord</label>
-            <input type="password" placeholder="Repeat password" name="repeatPassword" required>
-            <input type="submit">
+            <button class="google-btn">Sign up with Google</button>
+            <label for="email">Email<span>*</span></label>
+            <input type="email" name="email" required>
+            <label for="email">Naam<span>*</span></label>
+            <input type="text" name="name" required>
+            <label for="password">Wachtwoord<span>*</span></label>
+            <input type="password" name="password" required>
+            <label for="repeatPassword">Herhaal wachtwoord<span>*</span></label>
+            <input type="password" name="repeatPassword" required>
+            <input class="submit-btn" type="submit">
             <a href="/login">Already a member? Click here.</a>
           </form>
         @include('templates/footer')

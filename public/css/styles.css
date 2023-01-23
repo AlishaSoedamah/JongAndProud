@@ -78,6 +78,12 @@ nav > ul > li > a:hover,
     padding: 10px;
     border-radius: 5px;
     box-shadow: 5px 5px 0 var(--secondary-color);
+    transition: 0.2s;
+}
+
+.main-btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0 var(--secondary-color);
 }
 
 .google-btn {
@@ -90,8 +96,8 @@ nav > ul > li > a:hover,
 }
 
 .google-btn:hover,
-.login-btn:hover,
-.main-btn:hover {
+.login-btn:hover
+{
     cursor: pointer;
 }
 
@@ -257,10 +263,29 @@ blockquote::after {
 }
 
 /* CONTACT */
+label {
+    margin-top: 25px;
+}
+
 input {
-    background-color: #ffd8f3;
+    width: 430px;
+    margin: 20px 0;
     border: none;
+    border-bottom: 1px solid black;
     padding: 10px;
+}
+
+.submit-btn {
+    border: none;
+    width: 129px;
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+}
+
+label > span {
+    color: red;
 }
 /* GALLERY */
 
@@ -268,17 +293,14 @@ input {
 form {
     display: flex;
     flex-direction: column;
-    /* width: 100vw; */
-}
-
-from > input {
-    width: 40px;
 }
 
 /* FOOTER */
 .footer-container {
+  padding: 2em 0;
   display: flex;
   justify-content: space-evenly;
+  font-size: 1.2em;
 }
 
 .cta-footer {
@@ -286,8 +308,11 @@ from > input {
     flex-direction: column;
 }
 
-.footer-container > .footer-links > div > p {
-    font-weight: 700;
+.nav > a,
+.cta-footer > a  {
+    text-decoration: none;
+    color: var(--secondary-color);
+    margin: 5px 0;
 }
 
 .footer-container > .footer-links > div > a {
@@ -295,7 +320,23 @@ from > input {
     color: var(--secondary-color);
 }
 
+.footer-container > .footer-links > div > p,
+.nav > p,
+.cta-footer > p
+{
+    font-weight: 700;
+}
+
+.cta-footer > a:hover,
+.nav > a:hover,
+.footer-container > .footer-links > div > a:hover
+{
+    text-decoration: underline;
+}
+
 .copyright {
+    padding: 10px 0;
+    font-size: 1.2em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -314,15 +355,18 @@ from > input {
         padding: 0 3em;
     }
 
-    .dates {
+    .dates,
+    .core-values,
+    .about-container,
+    .team,
+    .footer-container
+    {
         display: inline; 
     }
 
-    nav > ul > li > a {
-        display: none;
-    }
 
-    .main-btn {
+    .main-btn,
+    nav > ul > li > a {
         display: none;
     }
 
@@ -342,40 +386,21 @@ from > input {
         right: -17px;
     }
 
-    .core-values {
-        display: inline;
-    }
-
     .big-widget > img{
         width: 100px;
     }
 
-    .big-widget > img{
-        width: 100px;
-    }
-
-    .text-container {
+    .text-container,
+    input {
         width: auto;
-    }
-
-    .about-container {
-        display: inline;
     }
 
     .about-img {
         width: 15em;
     }
 
-    .team {
-        display: inline;
-    }
-
     .team-pictures {
         width: 20em;
-    }
-
-    .footer-container {
-        display: inline;
     }
 }
 

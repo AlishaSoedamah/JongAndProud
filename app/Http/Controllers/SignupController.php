@@ -31,6 +31,6 @@ class SignupController extends Controller
             "email" => $email,
             "password" => $encryptedPassword,
         ]);
-        return redirect('/');
+        return redirect('/login');
     }
 }
