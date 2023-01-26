@@ -11,7 +11,7 @@
         <div class="main-wrapper">
         @include('templates/header')
           <h1>Galerij</h1>
-        @include('templates/footer')
         </div>
+        @include('templates/footer')
     </body>
 </html>

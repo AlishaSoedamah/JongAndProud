@@ -40,6 +40,7 @@
           <div class="team">
             <div class="team-row-one">
                 <h2>Joshua Kraan</h2>
+                <h3>organisator</h3>
                 <img class="team-pictures" src="{{ asset('images/Teamlead1.webp') }}" alt="Joshua Kraan">
                 <p>Joshua Kraan is 24 jaar en is de oprichter en organisator
                    van Jong & Proud. Naast Jong & Proud zit Joshua bij het 
@@ -50,6 +51,7 @@
             </div>
             <div class="team-row-two">
                 <h2>Marjolein du Pree</h2>
+                <h3>organisator</h3>
                 <img class="team-pictures" src="{{ asset('images/Teamlead2.webp') }}" alt="Marjolein du Pree">
                 <p>Marjolein du Pree is 21 jaar en is kort nadat Jong & Proud is 
                    opgericht mede organisator van Jong & Proud. Ook marjolein is 
@@ -59,7 +61,7 @@
                 </p>
             </div>
           </div>
-        @include('templates/footer')
         </div>
+        @include('templates/footer')
     </body>
 </html>

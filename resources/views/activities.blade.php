@@ -45,7 +45,7 @@
             <p>Meld je hier aan voor de komende activiteit deze maand!</p>
             <button class="main-btn">Meld je aan!</button>
           </div>
-        @include('templates/footer')
         </div>
+        @include('templates/footer')
     </body>
 </html>

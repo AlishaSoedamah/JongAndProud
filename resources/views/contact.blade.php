@@ -10,17 +10,21 @@
     <body>
         <div class="main-wrapper">
         @include('templates/header')
-          <h1>Contact</h1>
           <form action="" method="POST">
-            <label for="name">Naam</label><br>
-            <input type="text" id="name" name="name"><br>
-            <label for="email">Email<span>*</span></label><br>
-            <input type="email" id="email" name="email"><br>
-            <label for="message">Bericht<span>*</span></label><br>
-            <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
-            <input type="submit" value="Submit">
+            <div>
+                <h1>Contact</h1>
+                <label for="name">Naam</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email<span>*</span></label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="message">Bericht<span>*</span></label><br>
+                <div>
+                    <textarea id="message" name="message" rows="10" cols="60"></textarea><br><br>
+                    <input class="main-btn" type="submit" value="Verzenden">
+                </div>
+            </div>
         </form> 
-        @include('templates/footer')
         </div>
+        @include('templates/footer')
     </body>
 </html>

@@ -47,6 +47,10 @@ h3 {
     width: 80px;
 }
 
+.logo:hover {
+    cursor: pointer;
+}
+
 nav > ul {
     display: flex;
     align-items: center;
@@ -62,6 +66,14 @@ nav > ul > li {
 nav > ul > li > a {
     text-decoration: none;
     color: var(--secondary-color);
+}
+nav > ul > a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+nav > ul > a > li {
+    list-style: none;
 }
 
 nav > ul > li > a:hover,
@@ -87,7 +99,7 @@ nav > ul > li > a:hover,
 }
 
 .google-btn {
-    border: 1px solid black;
+    border: 1px solid var(--secondary-color);
     background: var(--primary-color);
     padding: 10px;
     font-size: 1.2em;
@@ -95,6 +107,7 @@ nav > ul > li > a:hover,
     width: 200px;
 }
 
+.submit-btn:hover,
 .google-btn:hover,
 .login-btn:hover
 {
@@ -103,7 +116,7 @@ nav > ul > li > a:hover,
 
 /* HOME PAGE */
 .quote-container {
-    padding-top: 35em;
+    padding-top: 39em;
     display: relative;
 }
 
@@ -152,6 +165,7 @@ blockquote::after {
 }
 
 .core-values {
+    padding: 4em 0;
     display: grid; 
     gap: 1em; 
     grid-template-areas: 
@@ -166,8 +180,8 @@ blockquote::after {
     border-radius: var(--border-radius);
 }
 
-.right-img-values > img {
-    width: 50em;
+.big-img-values {
+    width: 30em;
 }
 
 .small-left-widget {
@@ -194,6 +208,9 @@ blockquote::after {
     width: 10em;
 }
 
+.cta-bottom {
+    padding: 5em 0;
+}
 /* ACTIVITIES */
 .dates {
     display: flex; 
@@ -271,17 +288,8 @@ input {
     width: 430px;
     margin: 20px 0;
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--secondary-color);
     padding: 10px;
-}
-
-.submit-btn {
-    border: none;
-    width: 129px;
-}
-
-.submit-btn:hover {
-    cursor: pointer;
 }
 
 label > span {
@@ -292,15 +300,24 @@ label > span {
 /* LOGIN & SIGNUP*/
 form {
     display: flex;
+    justify-content: center;
+}
+
+form > div {
+    display: flex;
     flex-direction: column;
 }
 
 /* FOOTER */
+footer {
+    padding-top: 2em;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
 .footer-container {
-  padding: 2em 0;
   display: flex;
   justify-content: space-evenly;
-  font-size: 1.2em;
 }
 
 .cta-footer {
@@ -311,20 +328,20 @@ form {
 .nav > a,
 .cta-footer > a  {
     text-decoration: none;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     margin: 5px 0;
 }
 
 .footer-container > .footer-links > div > a {
     text-decoration: none;
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .footer-container > .footer-links > div > p,
 .nav > p,
 .cta-footer > p
 {
-    font-weight: 700;
+    font-weight: 900;
 }
 
 .cta-footer > a:hover,
@@ -336,7 +353,6 @@ form {
 
 .copyright {
     padding: 10px 0;
-    font-size: 1.2em;
     display: flex;
     flex-direction: column;
     align-items: center;

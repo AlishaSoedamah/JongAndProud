@@ -1,6 +1,6 @@
 <nav>
     <ul>
-        <li><img class="logo" src="{{ asset('images/logo.png') }}" alt="Jong & proud logo"></a></li>
+        <li><a href="/"><img class="logo" src="{{ asset('images/logo.png') }}" alt="Jong & proud logo"></a></li>
         <li><a href="/">Home</a></li>
         <li><a href="/about">Over ons</a></li>
         <li><a href="/activities">Activiteiten</a></li>
@@ -14,8 +14,8 @@
                 <a href="/logout">logout</a>
             </li>
         @else
-            <li class="main-btn"><a href="/login">Log in</a></li>
-            <li class="main-btn" ><a href="/sign-up">Aanmelden</a></li>
+        <a href="/login"><li class="main-btn">Log in</li></a>
+        <a href="/sign-up"><li class="main-btn">Aanmelden</li></a>
         @endif
     </ul>
 </nav>

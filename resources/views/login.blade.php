@@ -10,18 +10,20 @@
     <body>
         <div class="main-wrapper"> 
         @include('templates/header')
-          <h1>Login</h1>
           <form action="/login" method="POST">
             @csrf {{ csrf_field() }}
-            <button class="google-btn">Login with Google</button>
-            <label for="email">Email</label>
-            <input type="text" name="email" required>
-            <label for="password">Wachtwoord</label>
-            <input type="password" name="password" required>
-            <input class="submit-btn" type="submit">
-            <a href="/sign-up">Nog geen lid? Klik hier</a>
+            <div>
+              <h1>Login</h1>
+              <button class="google-btn">Login met Google</button>
+              <label for="email">Email</label>
+              <input type="text" name="email" required>
+              <label for="password">Wachtwoord</label>
+              <input type="password" name="password" required>
+              <input class="main-btn" type="submit">
+              <a href="/sign-up">Nog geen lid? Klik hier</a>
+            </div>
           </form>
-        @include('templates/footer')
         </div>
+        @include('templates/footer')
     </body>
 </html>

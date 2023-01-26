@@ -24,16 +24,16 @@
           </div>
           <div class="main-hero-img">
           <img class="big-img" src="{{ asset('images/card5.jpeg') }}" alt="">
-          <div id="loader-wrapper">
+          <!-- <div id="loader-wrapper">
             <div class="loader">
               <img class="hero-img hero-img-two" src="{{ asset('images/card2.jpeg') }}" alt="">
               <img class="hero-img hero-img-three" src="{{ asset('images/card3.jpeg') }}" alt="">
               <img class="hero-img hero-img-four" src="{{ asset('images/card4.jpeg') }}" alt="">
               <img class="hero-img hero-img-five" src="{{ asset('images/card1.jpeg') }}" alt="">
             </div>
-          </div>
+          </div> -->
           </div> 
-        <button class="main-btn" href="/sign-up">Lid worden?</button> 
+        <a href="/sign-up"><button class="main-btn">Lid worden?</button></a>
         </section>
         <section class="quote-container">
           <div class="quote-block">
@@ -56,22 +56,19 @@
           <div class="core-values">
             <div class="big-widget">
               <div class="core-values-text">
-                <h3>Veilige plek creëen</h3>
-                <p>Niet bang hoeven zijn om jezelf te kunnen zijn</p>
+                <h3>Veilige plek creëen. Niet bang hoeven zijn om jezelf te kunnen zijn</h3>
               </div>
-              <div class="right-img-values">
-                <img src="{{ asset('images/Rainbow-flag-sky.webp') }}" alt="The rainbow flag">
+              <div>
+                <img class="big-img-values" src="{{ asset('images/Rainbow-flag-sky.webp') }}" alt="The rainbow flag">
               </div>
             </div>
             <div class="small-left-widget">
-              <h3>Activiteiten organiseren</h3>
-              <p>Plezier hebben met elkaar</p>
               <img src="{{ asset('images/Rainbow-flag-sky.webp') }}" alt="The rainbow flag">
+              <h3>Activiteiten organiseren. Plezier hebben met elkaar</h3>
             </div>
             <div class="small-right-widget">
-              <h3>Connecties maken</h3>
-              <p>Leer andere mensen in dezelfde community kennen</p>
               <img src="{{ asset('images/Rainbow-flag-sky.webp') }}" alt="The rainbow flag">
+              <h3>Connecties maken. Leer andere mensen in dezelfde community kennen</h3>
           </div>
           </div>
         </article>
@@ -83,7 +80,7 @@
              met de nieuwste activiteiten en meer!</p>
           <button class="main-btn" href="/sign-up">Ik wil lid worden</button>
         </section>
-        @include('templates/footer')
       </div>
+      @include('templates/footer')
     </body>
 </html>
