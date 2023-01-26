@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Home Jong & Proud 🏳️‍🌈 🏳️‍⚧️</title>
+        <title>Home 🏳️‍🌈 🏳️‍⚧️ | Jong & Proud Amersfoort</title>
         <link href="{{ asset('css/styles.css') }}" rel="stylesheet" type="text/css" >
         <link href="{{ asset('css/header.css') }}" rel="stylesheet" type="text/css" >
         <script type="module" src="{{ URL::asset('scripts/animations.js') }}"></script>
@@ -23,8 +23,8 @@
             </p>
           </div>
           <div class="main-hero-img">
-          <img class="big-img" src="{{ asset('images/card5.jpeg') }}" alt="">
-          <!-- <div id="loader-wrapper">
+          <!-- <img class="big-img" src="{{ asset('images/card5.jpeg') }}" alt="">
+          <div id="loader-wrapper">
             <div class="loader">
               <img class="hero-img hero-img-two" src="{{ asset('images/card2.jpeg') }}" alt="">
               <img class="hero-img hero-img-three" src="{{ asset('images/card3.jpeg') }}" alt="">
@@ -51,24 +51,24 @@
               binnen het COC Midden Nederland voor LHBTIQ+ jongvolwassenen tussen 18 en 30 jaar in Amersfoort.
               Wij creëren een veilige plek in Amersfoort om samen plezier te hebben en elkaar te ondersteunen.
             </p>
-            <button class="main-btn">Over ons</button>
+            <a href="/about"><button class="main-btn">Over ons</button></a>
           </div>
           <div class="core-values">
             <div class="big-widget">
               <div class="core-values-text">
-                <h3>Veilige plek creëen. Niet bang hoeven zijn om jezelf te kunnen zijn</h3>
+                <h3 class="widget-text" >Veilige plek creëen. Niet bang hoeven zijn om jezelf te kunnen zijn</h3>
               </div>
               <div>
                 <img class="big-img-values" src="{{ asset('images/Rainbow-flag-sky.webp') }}" alt="The rainbow flag">
               </div>
             </div>
             <div class="small-left-widget">
-              <img src="{{ asset('images/Rainbow-flag-sky.webp') }}" alt="The rainbow flag">
-              <h3>Activiteiten organiseren. Plezier hebben met elkaar</h3>
+              <img class="small-img-left" src="{{ asset('images/Rainbow-flag-sky.webp') }}" alt="The rainbow flag">
+              <h3 class="widget-text">Activiteiten organiseren. Plezier hebben met elkaar</h3>
             </div>
             <div class="small-right-widget">
-              <img src="{{ asset('images/Rainbow-flag-sky.webp') }}" alt="The rainbow flag">
-              <h3>Connecties maken. Leer andere mensen in dezelfde community kennen</h3>
+              <img class="small-img-right" src="{{ asset('images/Rainbow-flag-sky.webp') }}" alt="The rainbow flag">
+              <h3 class="widget-text">Connecties maken. Leer andere mensen in dezelfde community kennen</h3>
           </div>
           </div>
         </article>
@@ -78,7 +78,7 @@
              Als u zich aanmeld ontvangt u een email met informatie. Nadat wij de aanmelding hebben 
              bevestigd kunt u een account aanmaken op de website waardoor u altijd op de hoogte wordt gehouden 
              met de nieuwste activiteiten en meer!</p>
-          <button class="main-btn" href="/sign-up">Ik wil lid worden</button>
+          <a href="/sign-up"><button class="main-btn">Ik wil lid worden</button></a>
         </section>
       </div>
       @include('templates/footer')

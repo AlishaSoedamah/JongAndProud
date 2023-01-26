@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>About</title>
+        <title>Over ons | Jong & Proud Amersfoort</title>
         <link href="{{ asset('css/styles.css') }}" rel="stylesheet" type="text/css" >
         <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.png') }}">
     </head>
@@ -19,7 +19,7 @@
                 mensen te leren kennen. 
               </p>
               <p>
-                Jong & Proud creëer t een veilige plek voor LHBTI+ 
+                Jong & Proud creëert een veilige plek voor LHBTI+ 
                 jong volwassen tussen de 18 en 30 jaar. 
                 Niet alleen organiseren wij activiteiten voor plezier 
                 en veiligheid maar we hebben ook veel educatieve 
@@ -30,7 +30,7 @@
                 activiteiten, verder Iedereen is welkom en wij 
                 ver welkomen allen om lid te worden.
               </p>
-              <button class="main-btn">Lid worden?</button> 
+              <button class="main-btn">Wordt ook lid</button> 
             </div>
             <div class="about-row-right">
               <img class="about-img" src="{{ asset('images/logo.png') }}" alt="Jong & Proud logo">

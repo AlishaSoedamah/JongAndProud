@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Sign up</title>
+        <title>Aanmelden | Jong & Proud Amersfoort</title>
         <link href="{{ asset('css/styles.css') }}" rel="stylesheet" type="text/css" >
         <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.png') }}">
     </head>
@@ -24,7 +24,7 @@
               <label for="repeatPassword">Herhaal wachtwoord<span>*</span></label>
               <input type="password" name="repeatPassword" required>
               <input class="main-btn" type="submit">
-              <a href="/login">Already a member? Click here.</a>
+              <a href="/login">Al lid? Log in</a>
             </div>
           </form>
         </div>
