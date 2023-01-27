@@ -23,7 +23,7 @@
               <input type="password" name="password" required>
               <label for="repeatPassword">Herhaal wachtwoord<span>*</span></label>
               <input type="password" name="repeatPassword" required>
-              <input class="main-btn" type="submit">
+              <input class="main-btn send-btn" type="submit">
               <a href="/login">Al lid? Log in</a>
             </div>
           </form>

@@ -24,6 +24,8 @@
               <th>Z</th>
               </tr>
           </table>
+          <p>Meld je hier aan voor de komende activiteit deze maand!</p>
+            <button class="main-btn">Meld je aan!</button>
           </div>
           <div class="dates">
             <div class="row1">
@@ -42,8 +44,6 @@
               <p><span>25</span>nov</p>
               <p><span>16</span>dec</p>
             </div>
-            <p>Meld je hier aan voor de komende activiteit deze maand!</p>
-            <button class="main-btn">Meld je aan!</button>
           </div>
         </div>
         @include('templates/footer')

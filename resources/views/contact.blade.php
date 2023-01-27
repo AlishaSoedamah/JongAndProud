@@ -20,7 +20,7 @@
                 <label for="message">Bericht<span>*</span></label><br>
                 <div>
                     <textarea id="message" name="message" rows="10" cols="60"></textarea><br><br>
-                    <input class="main-btn" type="submit" value="Verzenden">
+                    <input class="main-btn send-btn" type="submit" value="Verzenden">
                 </div>
             </div>
         </form> 

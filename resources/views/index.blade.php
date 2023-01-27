@@ -23,7 +23,7 @@
             </p>
           </div>
           <div class="main-hero-img">
-          <!-- <img class="big-img" src="{{ asset('images/card5.jpeg') }}" alt="">
+          <img class="big-img" src="{{ asset('images/card5.jpeg') }}" alt="">
           <div id="loader-wrapper">
             <div class="loader">
               <img class="hero-img hero-img-two" src="{{ asset('images/card2.jpeg') }}" alt="">
@@ -31,7 +31,7 @@
               <img class="hero-img hero-img-four" src="{{ asset('images/card4.jpeg') }}" alt="">
               <img class="hero-img hero-img-five" src="{{ asset('images/card1.jpeg') }}" alt="">
             </div>
-          </div> -->
+          </div>
           </div> 
         <a href="/sign-up"><button class="main-btn">Lid worden?</button></a>
         </section>

@@ -52,6 +52,7 @@ h3 {
 }
 
 nav > ul {
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,6 +94,10 @@ nav > ul > li > a:hover,
     transition: 0.2s;
 }
 
+.send-btn {
+    width: 200px;
+}
+
 .main-btn:hover {
     cursor: pointer;
     box-shadow: 0 0 0 var(--secondary-color);
@@ -104,7 +109,7 @@ nav > ul > li > a:hover,
     padding: 10px;
     font-size: 1.2em;
     border-radius: 0.2em;
-    width: 200px;
+    width: 280px;
 }
 
 .submit-btn:hover,
@@ -263,7 +268,9 @@ blockquote::after {
 /* ABOUT */
 .about-container {
     display: grid;
-    grid-gap: 5em;
+    grid-gap: 10em;
+    justify-content: center;
+    align-items: center;
     grid-template-areas: 
     "aboutLeft aboutRight"
     "aboutLeft aboutRight"; 
@@ -275,6 +282,10 @@ blockquote::after {
 
 .about-row-right {
     grid-area: aboutRight;
+}
+
+.about-row-left > p  {
+    width: 55ch;
 }
 
 .about-img {
@@ -325,7 +336,6 @@ input {
 label > span {
     color: red;
 }
-/* GALLERY */
 
 /* LOGIN & SIGNUP*/
 form {
@@ -394,6 +404,11 @@ footer {
         font-size: 1.2em;
     }
 
+    .about-row-left > p  {
+        width: auto;
+    }
+
+    .about-container,
     .core-values {
         display: inline;
     }
@@ -405,6 +420,7 @@ footer {
     .big-img-values {
         width: 250px;
         height: 250px;
+        object-fit: cover;
     }
     
     .small-left-widget,
@@ -436,7 +452,6 @@ footer {
     }
 
     .dates,
-    .about-container,
     .team,
     .footer-container
     {

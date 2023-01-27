@@ -19,7 +19,7 @@
               <input type="text" name="email" required>
               <label for="password">Wachtwoord</label>
               <input type="password" name="password" required>
-              <input class="main-btn" type="submit">
+              <input class="main-btn send-btn" type="submit">
               <a href="/sign-up">Nog geen lid? Meld je hier aan</a>
             </div>
           </form>
