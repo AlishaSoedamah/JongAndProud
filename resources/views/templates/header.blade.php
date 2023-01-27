@@ -4,7 +4,6 @@
         <li><a href="/">Home</a></li>
         <li><a href="/about">Over ons</a></li>
         <li><a href="/activities">Activiteiten</a></li>
-        <li><a href="/gallery">Galerij</a></li>
         <li><a href="/contact">Contact</a></li>
         @if(Session::has('user'))
             <li class="nav-item">
