@@ -12,9 +12,10 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function users()
     {
-        //
+        $user = User::all();
+        return view('users.users')->with('users', $user);;
     }
 
     /**
