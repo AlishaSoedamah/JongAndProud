@@ -12,10 +12,10 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function users()
+    public function index()
     {
-        $user = User::all();
-        return view('users.users')->with('users', $user);;
+        $users = User::all();
+        return view('users.index')->with('users', $users);
     }
 
     /**
@@ -45,7 +45,7 @@ class UserController extends Controller
      * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function show(User $user)
+    public function show(User $users)
     {
         //
     }
@@ -56,9 +56,10 @@ class UserController extends Controller
      * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function edit(User $user)
+    public function edit($id)
     {
-        //
+        $users = User::find($id);
+        return view('users.edit')->with('users', $users); 
     }
 
     /**
@@ -68,9 +69,12 @@ class UserController extends Controller
      * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, User $user)
+    public function update(Request $request, User $users)
     {
-        //
+        $users = User::find($id);
+        $input = $request->all();
+        $users->update($input);
+        return redirect('users')->with('flash_message', 'User Updated!'); 
     }
 
     /**
@@ -79,8 +83,8 @@ class UserController extends Controller
      * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function destroy(User $user)
+    public function destroy(User $users)
     {
-        //
+        return view('users.delete');
     }
 }
