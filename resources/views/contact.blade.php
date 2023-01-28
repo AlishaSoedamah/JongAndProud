@@ -11,6 +11,7 @@
         <div class="main-wrapper">
         @include('templates/header')
           <form action="" method="POST">
+          @csrf {{ csrf_field() }}
             <div>
                 <h1>Contact</h1>
                 <label for="name">Naam</label><br>

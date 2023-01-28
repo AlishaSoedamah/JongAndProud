@@ -85,6 +85,7 @@ class UserController extends Controller
      */
     public function destroy(User $users)
     {
-        return view('users.delete');
+        User::destroy($id);
+        return redirect('users')->with('flash_message', 'User deleted!');  
     }
 }

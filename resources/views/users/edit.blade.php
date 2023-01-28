@@ -8,7 +8,7 @@
         <link href="{{ asset('css/styles.css') }}" rel="stylesheet" type="text/css" >
     </head>
     <body>
-        <form class="main-wrapper" action="{{ url('index/' . $users->id) . '/edit'}}" method="post">
+        <form class="main-wrapper" action="{{ url('index/' . $users->id) . '/edit'}}" method="POST">
         {!! csrf_field() !!}
         <div>
         <h2>Edit user</h2>
