@@ -9,8 +9,7 @@
     </head>
     <body>
         <form class="main-wrapper" action="{{ url('index/' . $users->id) . '/edit'}}" method="POST">
-        @csrf {{ csrf_field() }}
-        @method('PUT')
+        {!! csrf_field() !!}
         <div>
         <h2>Edit user</h2>
             <input type="hidden" name="id" id="id" value="{{$users->id}}" id="id" />
