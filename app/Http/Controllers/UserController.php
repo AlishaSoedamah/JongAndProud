@@ -59,7 +59,7 @@ class UserController extends Controller
     public function edit($id)
     {
         $users = User::find($id);
-        return view('users.edit')->with('users', $users); 
+        return view('users.edit')->with('users', $users);
     }
 
     /**
@@ -74,7 +74,7 @@ class UserController extends Controller
         $users = User::find($id);
         $input = $request->all();
         $users->update($input);
-        return redirect('users')->with('flash_message', 'User Updated!'); 
+        return redirect('index')->with('flash_message', 'User Updated!'); 
     }
 
     /**
@@ -83,9 +83,10 @@ class UserController extends Controller
      * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function destroy(User $users)
+    public function destroy(User $id)
     {
-        User::destroy($id);
-        return redirect('users')->with('flash_message', 'User deleted!');  
+        $user = User::where('id', $id)->firstorfail()->delete();
+        echo ("User Record deleted successfully.");
+        return redirect()->route('users.index'); 
     }
 }

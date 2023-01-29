@@ -32,10 +32,10 @@
               <td>{{$user->created_at}}</td>
               <td>{{$user->updated_at}}</td>
               <td>
-                <a href="{{ url('/index/' . $user->id . '/edit') }}" title="Edit user"><button class="btn btn-info">Edit</button></a>
+                <a href="{{ route('users.edit', ['users' => $users->id]) }}" title="Edit user"><button class="btn btn-info">Edit</button></a>
               </td>
               <td>
-                <form method="POST" action="{{ url('/index' . '/' . $user->id) }}" accept-charset="UTF-8" style="display:inline">
+                <form method="POST" action="{{ route('users.destroy', ['users' => $users->id]) }}" accept-charset="UTF-8" style="display:inline">
                     {{ method_field('DELETE') }}
                     {{ csrf_field() }}
                     <button type="submit" class="btn btn-danger" title="Delete Student" onclick="return confirm('Confirm delete?')">Delete</button>
