@@ -59,7 +59,8 @@ class UserController extends Controller
     public function edit($id)
     {
         $users = User::find($id);
-        return view('users.edit')->with('users', $users); 
+        // return view('users.edit')->with('users', $users); 
+        return view('users.edit',['users'=>$users]);
     }
 
     /**
@@ -69,12 +70,12 @@ class UserController extends Controller
      * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, User $users)
+    public function update(Request $request, $id)
     {
         $users = User::find($id);
         $input = $request->all();
         $users->update($input);
-        return redirect('users')->with('flash_message', 'User Updated!'); 
+        return redirect('index')->with('flash_message', 'User Updated!');  
     }
 
     /**

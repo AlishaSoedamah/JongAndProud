@@ -22,4 +22,4 @@ Route::get('/logout', [LoginController::class, "logout"]);
 
 //Crud 
 Route::resource("/index", UserController::class);
-Route::delete('/users/{id}', 'UserController@destroy')->name('users.destroy');
+// Route::delete('/users/{id}', 'UserController@destroy')->name('users.destroy');
