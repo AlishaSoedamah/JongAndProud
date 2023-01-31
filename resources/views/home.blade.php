@@ -59,15 +59,15 @@
                 <h3 class="widget-text" >Veilige plek creëen. Niet bang hoeven zijn om jezelf te kunnen zijn</h3>
               </div>
               <div>
-                <img class="big-img-values" src="{{ asset('images/Rainbow-flag-sky.webp') }}" alt="The rainbow flag">
+                <img class="big-img-values" src="{{ asset('images/core-value-big-img.webp') }}" alt="The rainbow flag">
               </div>
             </div>
             <div class="small-left-widget">
-              <img class="small-img-left" src="{{ asset('images/Rainbow-flag-sky.webp') }}" alt="The rainbow flag">
+              <img class="small-img-left" src="{{ asset('images/core-value-img-right.webp') }}" alt="The rainbow flag">
               <h3 class="widget-text">Activiteiten organiseren. Plezier hebben met elkaar</h3>
             </div>
             <div class="small-right-widget">
-              <img class="small-img-right" src="{{ asset('images/Rainbow-flag-sky.webp') }}" alt="The rainbow flag">
+              <img class="small-img-right" src="{{ asset('images/core-value-img-left.webp') }}" alt="The rainbow flag">
               <h3 class="widget-text">Connecties maken. Leer andere mensen in dezelfde community kennen</h3>
           </div>
           </div>

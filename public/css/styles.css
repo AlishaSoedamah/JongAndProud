@@ -83,7 +83,6 @@ nav > ul > li > a:hover,
 {
     cursor: pointer;
 }
-
 /* BUTTONS */
 .main-btn {
     border: 2px solid var(--secondary-color);
@@ -148,8 +147,8 @@ blockquote::before {
     position: absolute;
     color: pink;
     opacity: 0.7;
-    top: -114px;
-    left: -19px;
+    top: -174px;
+    left: -55px;
 }
 
 blockquote::after {
@@ -169,6 +168,7 @@ blockquote::after {
 }
 
 .core-values {
+    padding: 6em 0;
     display: grid; 
     gap: 1em; 
     align-items: center;
@@ -320,6 +320,10 @@ blockquote::after {
     border-radius: 35em;
 }
 
+.team-row-one > p,
+.team-row-two > p {
+    width: 50ch;
+}
 /* CONTACT */
 label {
     margin-top: 25px;
@@ -409,7 +413,8 @@ footer {
     }
 
     .about-container,
-    .core-values {
+    .core-values,
+    .team {
         display: inline;
     }
 
@@ -452,7 +457,6 @@ footer {
     }
 
     .dates,
-    .team,
     .footer-container
     {
         display: inline; 
@@ -493,6 +497,11 @@ footer {
 
     .team-pictures {
         width: 20em;
+    }
+
+    .team-row-one > p,
+    .team-row-two > p {
+        width: auto;
     }
 }
 

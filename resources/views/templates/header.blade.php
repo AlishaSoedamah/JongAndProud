@@ -17,4 +17,7 @@
         <a href="/sign-up"><li class="main-btn">Aanmelden</li></a>
         @endif
     </ul>
+    <div class="hamburger">
+
+    </div>
 </nav>
