@@ -248,8 +248,20 @@ blockquote::after {
     padding: 2em;
 }
 /* ACTIVITIES */
+.activities-container {
+    display: grid;
+    grid-column-gap: 30em;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: 
+    "card dates"
+    "card dates"
+    "card dates"; 
+}
+
 .dates {
     display: flex; 
+    grid-area: dates;
 }
 
 .dates > div > p {
@@ -279,6 +291,7 @@ blockquote::after {
   }
   
   .card {
+    grid-area: card;
     width: 316px;
     height: fit-content;
     background-color: var(--foreground-color);
@@ -424,7 +437,7 @@ blockquote::after {
     width: 30em;
 }
 
-.our-team {
+.center-title {
     display: flex;
     justify-content: center;
     align-items: center;

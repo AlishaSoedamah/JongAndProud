@@ -13,7 +13,7 @@ var today = new Date();
 var date = new Date();
 
 
-currentMonth.textContent = date.toLocaleDateString("en-US", { month: 'long', year: 'numeric' });
+currentMonth.textContent = date.toLocaleDateString("ue-UE", { month: 'long', year: 'numeric' });
 today.setHours(0, 0, 0, 0);
 renderCalendar();
 

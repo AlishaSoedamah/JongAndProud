@@ -36,7 +36,7 @@
               <img class="about-img" src="{{ asset('images/logo.png') }}" alt="Jong & Proud logo">
             </div>
           </div>
-          <h1 class="our-team">Ons team</h1>
+          <h1 class="center-title">Ons team</h1>
           <div class="team">
             <div class="team-row-one">
                 <h2>Joshua Kraan</h2>

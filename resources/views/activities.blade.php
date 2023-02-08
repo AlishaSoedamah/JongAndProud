@@ -12,7 +12,8 @@
     <body>
         <div class="main-wrapper">
         @include('templates/header')
-        <h1>Activiteiten</h1>
+        <h1 class="center-title">Activiteiten</h1>
+        <div class="activities-container">
           <div class="card">
             <div class="calendar-toolbar">
               <button class="prev month-btn"><i class="fas fa-chevron-left"></i></button>
@@ -21,25 +22,18 @@
             </div>
             <div class="calendar">
               <div class="weekdays">
-                <div class="weekday-name">Sa</div>
-                <div class="weekday-name">Su</div>
-                <div class="weekday-name">Mo</div>
-                <div class="weekday-name">Tu</div>
-                <div class="weekday-name">We</div>
-                <div class="weekday-name">Th</div>
-                <div class="weekday-name">Fr</div>
+                <div class="weekday-name">Za</div>
+                <div class="weekday-name">Zo</div>
+                <div class="weekday-name">Ma</div>
+                <div class="weekday-name">Di</div>
+                <div class="weekday-name">Wo</div>
+                <div class="weekday-name">Do</div>
+                <div class="weekday-name">Vr</div>
               </div>
               <div class="calendar-days"></div>
+              <p>Meld je hier aan voor de komende activiteit deze maand!</p>
+              <button class="main-btn">Meld je aan!</button>
             </div>
-            <div class="goto-buttons">
-              <button type="button" class="btn prev-year">Prev Year</button>
-              <button type="button" class="btn today">Today</button>
-              <button type="button" class="btn next-year">Next Year</button>
-            </div>
-          </div>
-          <div class="container">
-          <p>Meld je hier aan voor de komende activiteit deze maand!</p>
-            <button class="main-btn">Meld je aan!</button>
           </div>
           <div class="dates">
             <div class="row1">
@@ -59,6 +53,7 @@
               <p><span>16</span>dec</p>
             </div>
           </div>
+        </div>
         </div>
         @include('templates/footer')
     </body>
