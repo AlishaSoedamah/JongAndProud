@@ -136,6 +136,7 @@ nav > ul > li > a:hover,
   }
   
 blockquote {
+    text-align: center;
     width: 40ch;
   }
   
@@ -173,8 +174,8 @@ blockquote::after {
     gap: 1em; 
     align-items: center;
     grid-template-areas: 
-        "bigCenter bigCenter"
-        "smallLeft smallRight"; 
+        "smallLeft bigCenter smallRight"
+        "smallLeft bigCenter smallRight"; 
 }
 
 .big-widget {
@@ -222,21 +223,21 @@ blockquote::after {
 }
 
 .small-img-right {
-  margin: 15px;
-  border: 2px var(--secondary-color) solid;
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 5px;
+    margin: 15px;
+    border: 2px var(--secondary-color) solid;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 .small-img-left {
-  margin: 15px;
-  border: 2px var(--secondary-color) solid;
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 5px;
+    margin: 15px;
+    border: 2px var(--secondary-color) solid;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 .widget-text {
@@ -265,6 +266,137 @@ blockquote::after {
     margin-left: -21px;
 }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+      --background-color: #19181a;
+      --foreground-color: #282729;
+      --text-color: #c9c8cc;
+      --highlight-text-color: #f8f7fa;
+      --inactive-text-color: #68676a;
+      --btn-bg: #313133;
+      --box-shadow: #111111;
+    }
+  }
+  
+  .card {
+    width: 316px;
+    height: fit-content;
+    background-color: var(--foreground-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0px 0px 10px var(--box-shadow);
+  }
+  
+  .calendar-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 15px;
+    border-bottom: var(--border-width) solid var(--box-shadow);
+  }
+  
+  .calendar-toolbar > .current-month {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--highlight-text-color);
+  }
+  
+  .calendar-toolbar > [class$="month-btn"] {
+    width: 40px;
+    aspect-ratio: 1;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    color: var(--highlight-text-color);
+    background: var(--btn-bg);
+    border: none;
+    border-radius: var(--border-radius);
+  }
+  
+  .weekdays,
+  .calendar-days {
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline: var(--spacing);
+  }
+  .weekdays {
+    padding-top: 12px;
+  }
+  .calendar-days {
+    padding-bottom: 12px;
+  }
+  
+  .weekday-name,
+  [class$="-day"] {
+    width: 40px;
+    height: 40px;
+    color: var(--text-color);
+    text-align: center;
+    line-height: 40px;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  
+  .weekday-name {
+    color: var(--highlight-text-color);
+    font-weight: 700;
+  }
+  
+  .current-day {
+    background-color: var(--color-accent);
+    color: var(--active-text-color);
+    border-radius: var(--border-radius);
+    font-weight: 700;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  .padding-day {
+    color: var(--inactive-text-color);
+    user-select: none;
+  }
+  
+  .calendar-toolbar > [class$="month-btn"]:hover,
+  .month-day:hover,
+  .btn:hover {
+    border-radius: var(--border-radius);
+    background-color: var(--btn-bg);
+    color: var(--color-accent);
+    border-radius: var(--border-radius);
+    transition: 0.1s;
+    cursor: pointer;
+    box-shadow: inset 0px 0px 0px 1.5px var(--color-accent);
+  }
+  
+  .calendar-toolbar > [class$="month-btn"]:focus,
+  .month-day:focus,
+  .btn:focus {
+    border-radius: var(--border-radius);
+    background-color: var(--color-accent);
+    color: var(--active-text-color);
+  }
+  
+  .goto-buttons {
+    border-top: var(--border-width) solid var(--box-shadow);
+    padding-block: 18px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .btn {
+    background: var(--btn-bg);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 11px 13px;
+    color: var(--highlight-text-color);
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-right: 1px;
+    box-shadow: 0px 0px 0px var(--box-shadow);
+  }
+  
+
 /* ABOUT */
 .about-container {
     display: grid;
@@ -290,6 +422,12 @@ blockquote::after {
 
 .about-img {
     width: 30em;
+}
+
+.our-team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .team {
@@ -322,7 +460,7 @@ blockquote::after {
 
 .team-row-one > p,
 .team-row-two > p {
-    width: 50ch;
+    width: 58ch;
 }
 /* CONTACT */
 label {
