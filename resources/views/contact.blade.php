@@ -20,7 +20,7 @@
                 <input type="email" id="email" name="email"><br>
                 <label for="message">Bericht<span>*</span></label><br>
                 <div>
-                    <textarea id="message" name="message" rows="10" cols="60"></textarea><br><br>
+                    <textarea style="resize: none;" id="message" name="message" rows="10" cols="60"></textarea><br><br>
                     <input class="main-btn send-btn" type="submit" value="Verzenden">
                 </div>
             </div>

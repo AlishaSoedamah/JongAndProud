@@ -38,7 +38,7 @@
                 <form method="POST" action="{{ url('/index' . '/' . $user->id) }}" accept-charset="UTF-8" style="display:inline">
                     {{ method_field('DELETE') }}
                     {{ csrf_field() }}
-                    <button type="submit" class="btn btn-danger" title="Delete Student" onclick="return confirm('Confirm delete?')">Delete</button>
+                    <button type="submit" class="btn btn-danger" title="Delete Student" onclick="return confirm('Weet je zeker dat je deze gebruiker wilt verwijderen')">Delete</button>
                 </form>
               </td>
           </tr>

@@ -7,7 +7,7 @@
         <li><a href="/contact">Contact</a></li>
         @if(Session::has('user'))
             <li class="nav-item">
-                <a>wecome {{ Session::get('user')['name']}}</a>
+                <a>Wekom {{ Session::get('user')['name']}}!</a>
             </li>
             <li class="nav-item">
                 <a href="/logout">logout</a>

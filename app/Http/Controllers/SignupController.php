@@ -21,16 +21,23 @@ class SignupController extends Controller
         $name = $formData['name'];
         $email = $formData['email'];
         $password = $formData['password'];
+        $repeatPassword = $formData['repeatPassword'];
 
-        //password hash
-        $encryptedPassword = Hash::make($password);
+        if ($password == $repeatPassword) {
+            //password hash
+            $encryptedPassword = Hash::make($password);
 
-        //insert data into db
-        User::create([
-            "name" => $name,
-            "email" => $email,
-            "password" => $encryptedPassword,
-        ]);
-        return redirect('/login');
+            //insert data into db
+            User::create([
+                "name" => $name,
+                "email" => $email,
+                "password" => $encryptedPassword,
+            ]);
+            return redirect('/login');
+        }
+        else {
+            echo "Wachtwoorden komen niet overeen!";
+        }
+
     }
 }
