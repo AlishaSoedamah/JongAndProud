@@ -21,10 +21,14 @@ Route::get('/logout', [LoginController::class, "logout"]);
 
 
 //Crud 
-Route::resource("/index", UserController::class)->middleware('auth');
+Route::resource("/index", UserController::class, ['middleware' => 'littlegatekeeper', function () {
+    return view('index');
+}]);
 
-Auth::routes([
-    'register' =>  false
-]);
+// Route::resource("/index", UserController::class);
 
-Route::get('/home', [App\Http\Controllers\AdminController::class, 'index'])->name('home');
+// Auth::routes([
+//     'register' =>  false
+// ]);
+
+// Route::get('/home', [App\Http\Controllers\AdminController::class, 'index'])->name('home');

@@ -155,7 +155,6 @@ return [
     */
 
     'providers' => [
-
         /*
          * Laravel Framework Service Providers...
          */
@@ -185,6 +184,7 @@ return [
         /*
          * Package Service Providers...
          */
+        'Spatie\LittleGateKeeper\LittleGateKeeperServiceProvider',
 
         /*
          * Application Service Providers...
@@ -211,5 +211,4 @@ return [
     'aliases' => Facade::defaultAliases()->merge([
         // 'ExampleClass' => App\Example\ExampleClass::class,
     ])->toArray(),
-
 ];
