@@ -13,7 +13,7 @@
                 <a href="/logout">logout</a>
             </li>
         @else
-        <a href="/login"><li class="main-btn">Log in</li></a>
+        <a href="/log-in"><li class="main-btn">Log in</li></a>
         <a href="/sign-up"><li class="main-btn">Aanmelden</li></a>
         @endif
     </ul>

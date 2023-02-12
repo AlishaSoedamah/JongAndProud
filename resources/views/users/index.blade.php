@@ -10,7 +10,7 @@
     </head>
     <body>
     <div class="main-wrapper">
-    <h1 class="mt-5 mb-5">Overzicht accounts J&P 🏳️‍🌈</h1>
+    <h1 class="mt-5 mb-5">Dashboard accounts J&P 🏳️‍🌈</h1>
     <table class="table table-hover">
       <thead>
           <tr>

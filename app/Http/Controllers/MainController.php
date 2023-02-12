@@ -5,10 +5,10 @@ namespace App\Http\Controllers;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class MainController extends Controller
 {
-    public function home()
+    public function main()
     {
-        return view('home');
+        return view('main');
     }
 }
