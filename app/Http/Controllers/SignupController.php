@@ -33,7 +33,7 @@ class SignupController extends Controller
                 "email" => $email,
                 "password" => $encryptedPassword,
             ]);
-            return redirect('/login');
+            return redirect('/log-in');
         }
         else {
             echo "Wachtwoorden komen niet overeen!";

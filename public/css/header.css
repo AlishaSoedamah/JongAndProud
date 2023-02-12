@@ -8,10 +8,6 @@
     background-color: var(--primary-color);
 }
 
-/* .fancy-text {
-    z-index: 100000;
-} */
-/*  Loaded styles */
 .loaded {
    opacity: 0;
    visibility: hidden;
@@ -42,7 +38,7 @@
     right: 230px;
     width: 235px;
     height: 217px;
-    animation: imgTwo 6s;
+    animation: imgTwo 6s ease;
 }
 
 .hero-img-three {
@@ -50,7 +46,7 @@
     right: 235px;
     width: 186px;
     height: 295px;
-    animation: imgThree 6s;
+    animation: imgThree 6s ease;
 }
 
 .hero-img-four {
@@ -58,7 +54,7 @@
     height: 145px;
     bottom: 92px;
     left: 270px;
-    animation: imgFour 6s;
+    animation: imgFour 6s ease;
 }
 
 .hero-img-five {
@@ -66,7 +62,7 @@
     top: 90px;
     width: 182px;
     height: 263px;
-    animation: imgFive 6s;
+    animation: imgFive 6s ease;
 }
 
 .hero {
@@ -167,6 +163,9 @@
 @keyframes imgTwo {
     0% {
         opacity: 0;
+    }
+    10% {
+        opacity: 0;
         top: 160px;
     }
     30% {
@@ -187,20 +186,21 @@
 
 @keyframes imgThree {
     0% {
+        opacity: 0;
+    }
+    15% {
         top: 400px;
         opacity: 0;
     }
     30% {
+        top: 390px;
         opacity: 1;
     }
     50% {
         opacity: 1;
-        top: 380px;
-    }
-    90% {
-        top: 355px;
     }
     100% {
+        top: 330px;
         opacity: 0;
     }
 }
@@ -208,18 +208,22 @@
 @keyframes imgFour {
     0% {
         opacity: 0;
+    }
+
+    17% {
+        opacity: 0;
         bottom: 10px;
     }
     30% {
         opacity: 1;
-        bottom: 30px
+        bottom: 50px
     }
     50% {
         opacity: 1;
-        bottom: 70px
+        bottom: 90px
     }
     90% {
-        bottom: 92px;
+        bottom: 140px;
     }
     100% {
         opacity: 0;
@@ -237,13 +241,23 @@
     }
     50% {
         opacity: 1;
-        top: 120px;
+        top: 140px;
     }
     90% {
         top: 100px;
     }
     100% {
         opacity: 0;
-        top: 90px;
+        top: 50px;
     }
 }
+
+@media screen and (max-width: 1140px) {
+
+    .hero-img-two,
+    .hero-img-three,
+    .hero-img-four,
+    .hero-img-five {
+        display: none;
+    }
+ }
