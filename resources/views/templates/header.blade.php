@@ -1,6 +1,6 @@
 <nav>
-    <ul>
-        <li><a href="/"><img class="logo" src="{{ asset('images/logo.png') }}" alt="Jong & proud logo"></a></li>
+    <a href="/"><img class="logo" src="{{ asset('images/logo.png') }}" alt="Jong & proud logo"></a>
+    <ul class="nav-menu">
         <li><a href="/">Home</a></li>
         <li><a href="/about">Over ons</a></li>
         <li><a href="/activities">Activiteiten</a></li>
@@ -18,6 +18,8 @@
         @endif
     </ul>
     <div class="hamburger">
-
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
     </div>
 </nav>

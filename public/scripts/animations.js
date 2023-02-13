@@ -6,6 +6,17 @@ function loader() {
     wrapper.classList.add('loaded');
 }
 
+// //hamburger menu
+// const hamburger = document.querySelector(".hambuger");
+// const navMenu = document.querySelector(".nav-menu");
+
+// console.log(hamburger);
+
+// hamburger.addEventListener("click", () => {
+//     hamburger.classList.toggle("active");
+//     navMenu.classList.toggle("active");
+// })
+
 // calendar from: https://codepen.io/khalidsaifullahfuad/pen/eYEZNzX
 var currentMonth = document.querySelector(".current-month");
 var calendarDays = document.querySelector(".calendar-days");

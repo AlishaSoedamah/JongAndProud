@@ -51,7 +51,11 @@ h3 {
     cursor: pointer;
 }
 
-nav > ul {
+.hamburger {
+    display: none;
+}
+
+nav{
     padding: 0;
     display: flex;
     align-items: center;
@@ -59,7 +63,14 @@ nav > ul {
     justify-content: space-between;
 }
 
+nav > ul {
+    display: flex;
+    align-items center;
+}
+
 nav > ul > li {
+    display: flex;
+    justify-content: space-between;
     list-style: none;
     margin-left: 0.5em;
 }
@@ -608,13 +619,56 @@ footer {
     }
 
     .dates,
-    .footer-container
+    .footer-container,
+    .activities-container
     {
         display: inline; 
     }
 
-    nav > ul > li > a {
-        display: none;
+    nav > ul { 
+        padding: 0;
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        background-color: var(--primary-color);
+    }
+
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: var(--secondary-color);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-menu.active {
+        left: 0;
+        
     }
 
     blockquote {
@@ -653,6 +707,10 @@ footer {
     .team-row-one > p,
     .team-row-two > p {
         width: auto;
+    }
+
+    footer {
+        text-align: center;
     }
 }
 

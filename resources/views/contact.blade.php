@@ -10,7 +10,7 @@
     <body>
         <div class="main-wrapper">
         @include('templates/header')
-          <form action="" method="POST">
+        <form action="https://formsubmit.co/alisha.soedamah@gmail.com" method="POST">
           @csrf {{ csrf_field() }}
             <div>
                 <h1>Contact</h1>

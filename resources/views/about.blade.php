@@ -30,7 +30,7 @@
                 activiteiten, verder Iedereen is welkom en wij 
                 ver welkomen allen om lid te worden.
               </p>
-              <button class="main-btn">Wordt ook lid</button> 
+              <button class="main-btn">Word lid</button> 
             </div>
             <div class="about-row-right">
               <img class="about-img" src="{{ asset('images/logo.png') }}" alt="Jong & Proud logo">
