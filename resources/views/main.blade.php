@@ -54,22 +54,17 @@
             <a href="/about"><button class="main-btn">Over ons</button></a>
           </div>
           <div class="core-values">
-            <div class="big-widget">
-              <div class="core-values-text">
+            <div class="big-widget general-widget">
+                <img class="values-img" src="{{ asset('images/core-value-big-img.webp') }}" alt="The rainbow flag">
                 <h3 class="widget-text" >Veilige plek creëen. Niet bang hoeven zijn om jezelf te kunnen zijn</h3>
-              </div>
-              <div>
-                <img class="big-img-values" src="{{ asset('images/core-value-big-img.webp') }}" alt="The rainbow flag">
-              </div>
             </div>
-            <div class="small-left-widget">
-              <img class="small-img-left" src="{{ asset('images/core-value-img-right.webp') }}" alt="The rainbow flag">
+            <div class="small-left-widget general-widget">
+              <img class="values-img" src="{{ asset('images/core-value-img-right.webp') }}" alt="The rainbow flag">
               <h3 class="widget-text">Activiteiten organiseren. Plezier hebben met elkaar</h3>
             </div>
-            <div class="small-right-widget">
-              <img class="small-img-right" src="{{ asset('images/core-value-img-left.webp') }}" alt="The rainbow flag">
+            <div class="small-right-widget general-widget">
+              <img class="values-img" src="{{ asset('images/core-value-img-left.webp') }}" alt="The rainbow flag">
               <h3 class="widget-text">Connecties maken. Leer andere mensen in dezelfde community kennen</h3>
-          </div>
           </div>
         </article>
         <section class="cta-bottom center-flex">
