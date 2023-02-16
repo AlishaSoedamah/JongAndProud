@@ -32,20 +32,19 @@
               </div>
               <div class="calendar-days"></div>
               <p>Meld je hier aan voor de komende activiteit deze maand!</p>
-              <button class="main-btn">Meld je aan!</button>
+              <button href="https://docs.google.com/forms/d/e/1FAIpQLSf_zqe7K2WCmbVzHfwzEiCePTN7P7pzgvgylXcjs9zEbjXQFQ/viewform" class="main-btn">Meld je aan!</button>
             </div>
           </div>
           <div class="dates">
             <div class="row1">
-              <p><span>19</span> feb</p>
               <p><span>11</span> maa</p>
               <p><span>15</span>apr</p>
               <p><span>20</span>mei</p>
               <p><span>nvt</span>jun</p>
               <p><span>nvt</span>juli</p>
+              <p><span>19</span>aug</p>
             </div>
             <div class="row2">
-              <p><span>19</span>aug</p>
               <p><span>16</span>sep</p>
               <p><span>11</span>okt</p>
               <p><span>16</span>okt</p>

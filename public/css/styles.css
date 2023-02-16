@@ -59,7 +59,6 @@ nav{
     padding: 0;
     display: flex;
     align-items: center;
-    justify-content: center;
     justify-content: space-between;
 }
 
@@ -72,7 +71,8 @@ nav > ul > li {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    margin-left: 0.5em;
+    padding: 0 1em;
+    align-items: center;
 }
 
 nav > ul > li > a {
@@ -80,6 +80,7 @@ nav > ul > li > a {
     color: var(--secondary-color);
 }
 nav > ul > a {
+    padding-left: 39px;
     text-decoration: none;
     color: var(--secondary-color);
 }
@@ -559,13 +560,13 @@ footer {
 }
 
 .copyright {
-    padding: 10px 0;
+    padding: 50px 0 15px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 912px) {
     .quote {
         font-size: 1.2em;
     }
@@ -668,7 +669,6 @@ footer {
 
     .nav-menu.active {
         left: 0;
-        
     }
 
     blockquote {

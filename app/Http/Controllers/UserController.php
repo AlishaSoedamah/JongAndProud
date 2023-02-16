@@ -18,6 +18,15 @@ class UserController extends Controller
      * @return \Illuminate\Http\Response
      */
 
+
+     /**
+ * @param  array $credentials  Format: ['username' => '...', 'password' => '...']
+ * @return bool
+ */
+    public function isAuthenticated($credentials) {
+        return view('/index');
+    }
+
     public function index()
     {
         $users = User::all();

@@ -8,6 +8,7 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\SignupController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\NotFoundController;
 
 Route::get('/', [MainController::class, "main"]);
 Route::get('/about', [AboutController::class, "about"]);
@@ -18,14 +19,16 @@ Route::post('/sign-up', [SignupController::class, "postUser"]);
 Route::post('/log-in', [LoginController::class, "postLogin"]);
 Route::get('/sign-up', [SignupController::class, "signUp"]);
 Route::get('/logout', [LoginController::class, "logout"]);
+Route::get('/not-found', [NotFoundController::class, "notFound"]);
 
 
 //Crud 
-Route::resource("/index", UserController::class, ['middleware' => 'littlegatekeeper', function () {
-    return view('index');
-}]);
+// Route::resource("/index", UserController::class, ['middleware' => 'littlegatekeeper', function () {
+//     return view('index');
+// }]);
 
-// Route::resource("/index", UserController::class);
+// Route::resource('/index', [UserController::class, "isAuthenticated", ['middleware' => 'littlegatekeeper']]);
+Route::resource("/index", UserController::class);
 
 // Auth::routes([
 //     'register' =>  false
