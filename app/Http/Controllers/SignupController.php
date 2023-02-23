@@ -22,6 +22,7 @@ class SignupController extends Controller
         $email = $formData['email'];
         $password = $formData['password'];
         $repeatPassword = $formData['repeatPassword'];
+        
 
         if ($password == $repeatPassword) {
             //password hash
@@ -39,5 +40,25 @@ class SignupController extends Controller
             echo "Wachtwoorden komen niet overeen!";
         }
 
+        try {
+
+            $user = User::create([
+                "name" => $name,
+                "email" => $email,
+                "password" => $encryptedPassword,
+            ]);
+        
+        }
+        catch (Illuminate\Database\QueryException $e){
+            $errorCode = $e->errorInfo[1];
+            if($errorCode == 1062){
+                echo "Email is al gebruikt!";
+            }
+        }
     }
+
+    public function isAuthenticated($credentials) {
+        return view('index');
+    }
+
 }

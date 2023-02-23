@@ -108,6 +108,10 @@
     .hero-desc {
         width: 42ch;
     }
+    .big-img {
+        width: 37em;
+        height: 20em;
+    }
 }
 
 @media screen and (max-width: 480px) {
