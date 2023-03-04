@@ -3,17 +3,16 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>404 | Jong & Proud Amersfoort</title>
+        <title>Mail verstuurd| Jong & Proud Amersfoort</title>
         <link href="{{ asset('css/styles.css') }}" rel="stylesheet" type="text/css" >
         <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.png') }}">
     </head>
     <body>
         <div class="main-wrapper">
         @include('templates/header')
-            <div class="center-flex">
-                <h1>404</h1>
-                <h2>Oops! We kunnen deze pagina niet vinden</h2>
-            </div>
+        <div class="center-flex">
+            <h1>Je mail is verstuurd!</h1>
+        </div>
         </div>
     </body>
 </html>

@@ -14,6 +14,7 @@ Route::get('/', [MainController::class, "main"]);
 Route::get('/about', [AboutController::class, "about"]);
 Route::get('/activities', [ActivitiesController::class, "activities"]);
 Route::get('/contact', [ContactController::class, "contact"]);
+Route::get('/success', [ContactController::class, "success"]);
 Route::get('/log-in', [LoginController::class, "logIn"]);
 Route::post('/sign-up', [SignupController::class, "postUser"]); 
 Route::post('/log-in', [LoginController::class, "postLogin"]);

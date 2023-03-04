@@ -11,6 +11,10 @@
         <div class="main-wrapper">
         @include('templates/header')
         <form action="https://formsubmit.co/JongProud@gmail.com" method="POST">
+        <!-- Disable Captcha -->
+        <input type="hidden" name="_captcha" value="false">
+        <!-- Success page -->
+        <input type="hidden" name="_next" value="http://127.0.0.1:8000/success">
           @csrf {{ csrf_field() }}
             <div>
                 <h1>Contact</h1>
