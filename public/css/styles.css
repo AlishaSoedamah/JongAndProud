@@ -19,6 +19,7 @@ h1 {
 }
 
 h2 {
+    margin: 0;
     font-size: 3em;
 }
 
@@ -244,24 +245,43 @@ blockquote::after {
     "card dates"; 
 }
 
-.dates {
-    display: flex; 
-    grid-area: dates;
-}
 
-.dates > div > p {
-  margin: 40px 0;
-}
-
-.dates > div > p > span::after {
-    content: " ";
-    z-index: -1;
-    position: absolute;
-    background: #ff7bc4;
-    padding: 15px;
-    border-radius: 40px;
-    margin-left: -21px;
-}
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  } 
 
 @media (prefers-color-scheme: dark) {
     :root {
@@ -428,6 +448,16 @@ blockquote::after {
     align-items: center;
 }
 
+.team-row-one > h3,
+.team-row-two > h3 {
+    background: #ffde56;
+    padding: 5px 10px;
+    outline: 2px black solid;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 1em;
+}
+
 .team {
     display: grid;
     grid-gap: 5em;
@@ -452,14 +482,17 @@ blockquote::after {
 }
 
 .team-pictures {
-    width: 25em;
+    margin: 20px 0;
+    width: 20em;
     border-radius: 35em;
 }
 
 .team-row-one > p,
 .team-row-two > p {
-    width: 58ch;
+    width: 50ch;
 }
+
+
 /* CONTACT */
 label {
     margin-top: 25px;
@@ -539,6 +572,54 @@ footer {
     align-items: center;
 }
 
+@media screen and (max-width: 944px) {
+
+    nav > ul { 
+        padding: 0;
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        background-color: var(--primary-color);
+    }
+
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: var(--secondary-color);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+}
+
 @media screen and (max-width: 912px) {
     .quote {
         font-size: 1.2em;
@@ -588,56 +669,10 @@ footer {
         padding: 0 3em;
     }
 
-    .dates,
     .footer-container,
     .activities-container
     {
         display: inline; 
-    }
-
-    nav > ul { 
-        padding: 0;
-        display: block;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    .hamburger.active .bar:nth-child(2){
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        background-color: var(--primary-color);
-    }
-
-    .bar {
-        display: block;
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
-        -webkit-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
-        background-color: var(--secondary-color);
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-    }
-
-    .nav-menu.active {
-        left: 0;
     }
 
     blockquote {

@@ -24,7 +24,7 @@
         <div class="cta-footer">
             <p>Sluit je aan!</p>
             <a href="/sign-up">Aanmelden</a>
-            <a href="/login">Log in</a>
+            <a href="/log-in">Log in</a>
         </div>
     </div>
     <span class="copyright">All rights reserved <?php $date = date('Y'); echo $date; ?> &copy;</span>

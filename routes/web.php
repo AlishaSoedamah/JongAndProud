@@ -23,13 +23,13 @@ Route::get('/not-found', [NotFoundController::class, "notFound"]);
 
 
 //Crud 
-Route::resource("/index", UserController::class, ['middleware' => 'littlegatekeeper', function () {
-    return view('index');
-}]);
+// Route::resource("/index", UserController::class, ['middleware' => 'littlegatekeeper', function () {
+//     return view('index');
+// }]);
 
 // Route::resource('/index', [UserController::class, "isAuthenticated", ['middleware' => 'littlegatekeeper']]);
 
-// Route::resource("/index", UserController::class);
+Route::resource("/index", UserController::class);
 
 // Auth::routes([
 //     'register' =>  false

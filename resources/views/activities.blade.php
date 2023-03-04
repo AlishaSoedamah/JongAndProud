@@ -35,8 +35,8 @@
               <button href="https://docs.google.com/forms/d/e/1FAIpQLSf_zqe7K2WCmbVzHfwzEiCePTN7P7pzgvgylXcjs9zEbjXQFQ/viewform" class="main-btn">Meld je aan!</button>
             </div>
           </div>
-          <div class="dates">
-            <div class="row1">
+          <div class="">
+            <!-- <div class="row1">
               <p><span>11</span> maa</p>
               <p><span>15</span>apr</p>
               <p><span>20</span>mei</p>
@@ -50,6 +50,20 @@
               <p><span>16</span>okt</p>
               <p><span>25</span>nov</p>
               <p><span>16</span>dec</p>
+            </div> -->
+            <button class="accordion">Section 1</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <button class="accordion">Section 2</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <button class="accordion">Section 3</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
           </div>
         </div>
