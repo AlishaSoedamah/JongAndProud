@@ -142,12 +142,14 @@
 @keyframes scaleImg {
     0% {
         opacity: 0;
+        height: 0;
     }
     30% {
         top: -10em;
         width: 33em;
         height: 20em;
         opacity: 0;
+        height: 10em;
     }
     40% {
         opacity: 1;

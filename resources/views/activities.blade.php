@@ -14,6 +14,58 @@
         @include('templates/header')
         <h1 class="center-title">Activiteiten</h1>
         <div class="activities-container">
+            <div>
+            <button class="accordion">11 maart</button>
+            <div class="panel">
+              <p>Spelletjes avond</p>
+            </div>
+
+            <button class="accordion">15 april</button>
+            <div class="panel">
+              <p>Paaseieren zoeken door stad</p>
+            </div>
+
+            <button class="accordion">20 mei</button>
+            <div class="panel">
+              <p>Karaoke</p>
+            </div>
+
+            <button class="accordion">juni</button>
+            <div class="panel">
+              <p>Pride Amersfoort</p>
+            </div>
+
+            <button class="accordion">juli</button>
+            <div class="panel">
+              <p>Pride Amsterdam</p>
+            </div>
+
+            <button class="accordion">19 augustus</button>
+            <div class="panel">
+              <p>BBQ</p>
+            </div>
+
+            <button class="accordion">16 september</button>
+            <div class="panel">
+              <p>Bowlen</p>
+            </div>
+
+            <button class="accordion">11 oktober</button>
+            <div class="panel">
+              <p>Coming out Weekend</p>
+            </div>
+
+            <button class="accordion">16 oktober</button>
+            <div class="panel">
+              <p>Halloween</p>
+            </div>
+
+            <button class="accordion">25 november</button>
+            <button class="accordion">16 december</button>
+            <div class="panel">
+              <p>Kerst</p>
+            </div>
+          </div>
           <div class="card">
             <div class="calendar-toolbar">
               <button class="prev month-btn"><i class="fas fa-chevron-left"></i></button>
@@ -35,39 +87,8 @@
               <button href="https://docs.google.com/forms/d/e/1FAIpQLSf_zqe7K2WCmbVzHfwzEiCePTN7P7pzgvgylXcjs9zEbjXQFQ/viewform" class="main-btn">Meld je aan!</button>
             </div>
           </div>
-          <div class="">
-            <!-- <div class="row1">
-              <p><span>11</span> maa</p>
-              <p><span>15</span>apr</p>
-              <p><span>20</span>mei</p>
-              <p><span>nvt</span>jun</p>
-              <p><span>nvt</span>juli</p>
-              <p><span>19</span>aug</p>
-            </div>
-            <div class="row2">
-              <p><span>16</span>sep</p>
-              <p><span>11</span>okt</p>
-              <p><span>16</span>okt</p>
-              <p><span>25</span>nov</p>
-              <p><span>16</span>dec</p>
-            </div> -->
-            <button class="accordion">Section 1</button>
-            <div class="panel">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-
-            <button class="accordion">Section 2</button>
-            <div class="panel">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-
-            <button class="accordion">Section 3</button>
-            <div class="panel">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-          </div>
-        </div>
-        </div>
+</div>
+</div>
         @include('templates/footer')
     </body>
 </html>

@@ -14,7 +14,6 @@
             @csrf {{ csrf_field() }}
             <div>
               <h1>Login</h1>
-              <button class="google-btn">Login met Google</button>
               <label for="email">Email</label>
               <input type="text" name="email" required>
               <label for="password">Wachtwoord</label>
