@@ -15,6 +15,7 @@ class LoginController extends Controller
         return view('log-in');
     }
 
+    
     public function postLogin(Request $request)
     {
         $loginCredentials = $request->all();

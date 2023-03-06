@@ -17,6 +17,7 @@ Route::get('/contact', [ContactController::class, "contact"]);
 Route::get('/success', [ContactController::class, "success"]);
 Route::get('/log-in', [LoginController::class, "logIn"]);
 Route::post('/sign-up', [SignupController::class, "postUser"]); 
+Route::get('/account-made', [SignupController::class, "userMade"]); 
 Route::post('/log-in', [LoginController::class, "postLogin"]);
 Route::get('/sign-up', [SignupController::class, "signUp"]);
 Route::get('/logout', [LoginController::class, "logout"]);

@@ -34,28 +34,34 @@ class SignupController extends Controller
                 "email" => $email,
                 "password" => $encryptedPassword,
             ]);
-            return redirect('/log-in');
+            return redirect('/account-made');
         }
         else {
             echo "Wachtwoorden komen niet overeen!";
         }
 
-        try {
+        // try {
 
-            $user = User::create([
-                "name" => $name,
-                "email" => $email,
-                "password" => $encryptedPassword,
-            ]);
+        //     $user = User::create([
+        //         "name" => $name,
+        //         "email" => $email,
+        //         "password" => $encryptedPassword,
+        //     ]);
         
-        }
-        catch (Illuminate\Database\QueryException $e){
-            $errorCode = $e->errorInfo[1];
-            if($errorCode == 1062){
-                echo "Email is al gebruikt!";
-            }
-        }
+        // }
+        // catch (Illuminate\Database\QueryException $e){
+        //     $errorCode = $e->errorInfo[1];
+        //     if($errorCode == 1062){
+        //         echo "Email is al gebruikt!";
+        //     }
+        // }
     }
+
+    public function userMade()
+    {
+        return view('account-made');
+    }
+
 
     public function isAuthenticated($credentials) {
         return view('index');
