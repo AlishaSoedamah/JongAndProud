@@ -10,7 +10,7 @@
     <body>
         <div class="main-wrapper"> 
         @include('templates/header')
-          <form action="/login" method="POST">
+          <form action="/log-in" method="POST">
             @csrf {{ csrf_field() }}
             <div>
               <h1>Login</h1>

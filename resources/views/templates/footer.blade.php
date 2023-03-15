@@ -27,5 +27,5 @@
             <a href="/log-in">Log in</a>
         </div>
     </div>
-    <span class="copyright">All rights reserved <?php $date = date('Y'); echo $date; ?> &copy;</span>
+    <span class="copyright">All rights reserved <?php $date = date('Y'); echo $date; ?> &copy; <br>website by Alisha</span>
 </footer>

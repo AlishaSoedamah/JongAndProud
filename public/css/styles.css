@@ -128,6 +128,7 @@ a {
 /* HOME PAGE */
 .quote-container {
     padding-top: 39em;
+    padding-bottom: 50px;
     display: relative;
 }
 
@@ -230,7 +231,7 @@ blockquote::after {
 /* ACTIVITIES */
 .activities-container {
     display: grid;
-    grid-column-gap: 30em;
+    grid-column-gap: 10em;
     justify-content: center;
     align-items: center;
     grid-template-areas: 
@@ -710,7 +711,7 @@ footer {
 
 @media screen and (max-width: 480px) {
     .quote-container {
-        padding-top: 13em;    
+        padding: 22em 0 5em 0;    
     }
 
     .hero-desc {
