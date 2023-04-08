@@ -6,6 +6,7 @@
         <title>Over ons | Jong & Proud Amersfoort</title>
         <link href="{{ asset('css/styles.css') }}" rel="stylesheet" type="text/css" >
         <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.png') }}">
+        <script type="module" src="{{ URL::asset('scripts/animations.js') }}"></script>
     </head>
     <body>
         <div class="main-wrapper">

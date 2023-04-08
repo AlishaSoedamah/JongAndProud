@@ -266,10 +266,6 @@ blockquote::after {
     margin-left: 5px;
   }
   
-  .active:after {
-    content: "\2212";
-  }
-  
   .panel {
     padding: 0 18px;
     background-color: white;
@@ -426,7 +422,9 @@ blockquote::after {
 }
 
 .about-row-right {
+    display: grid;
     grid-area: aboutRight;
+    justify-content: center;
 }
 
 .about-row-left > p  {
@@ -466,6 +464,7 @@ blockquote::after {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 10px 0;
 }
 
 .team-row-one {
@@ -578,12 +577,17 @@ footer {
         display: block;
     }
 
-    .hamburger.active .bar:nth-child(2){
-        opacity: 0;
+    .about-container {
+        display: inline;
+
     }
 
     .hamburger.active .bar:nth-child(1){
         transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
     }
 
     .hamburger.active .bar:nth-child(3){
@@ -595,6 +599,8 @@ footer {
         left: -100%;
         top: 70px;
         background-color: var(--primary-color);
+        background: white;
+        height: 100vh;
     }
 
     .bar {
@@ -605,7 +611,6 @@ footer {
         -webkit-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
         background-color: var(--secondary-color);
-        width: 100%;
         text-align: center;
         transition: 0.3s;
     }
@@ -624,7 +629,6 @@ footer {
         width: auto;
     }
 
-    .about-container,
     .core-values,
     .team {
         display: inline;

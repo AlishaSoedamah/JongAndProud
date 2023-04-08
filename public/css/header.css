@@ -108,18 +108,14 @@
     .hero-desc {
         width: 42ch;
     }
+    
     .big-img {
-        width: 37em;
+        width: 100vh;
         height: 20em;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .big-img {
-        width: 19em;
-        height: 20em;
-    }
-
     .animated-letters > h1 {
         font-size: 4em;
         line-height: normal;

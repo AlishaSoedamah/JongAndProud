@@ -15,56 +15,43 @@
         <h1 class="center-title">Activiteiten</h1>
         <div class="activities-container">
             <div>
-            <button class="accordion">11 maart</button>
-            <div class="panel">
-              <p>Spelletjes avond</p>
-            </div>
-
-            <button class="accordion">15 april</button>
-            <div class="panel">
-              <p>Paaseieren zoeken door stad</p>
-            </div>
-
-            <button class="accordion">20 mei</button>
-            <div class="panel">
-              <p>Karaoke</p>
-            </div>
-
-            <button class="accordion">juni</button>
-            <div class="panel">
-              <p>Pride Amersfoort</p>
-            </div>
-
-            <button class="accordion">juli</button>
-            <div class="panel">
-              <p>Pride Amsterdam</p>
-            </div>
-
-            <button class="accordion">19 augustus</button>
-            <div class="panel">
-              <p>BBQ</p>
-            </div>
-
-            <button class="accordion">16 september</button>
-            <div class="panel">
-              <p>Bowlen</p>
-            </div>
-
-            <button class="accordion">11 oktober</button>
-            <div class="panel">
-              <p>Coming out Weekend</p>
-            </div>
-
-            <button class="accordion">16 oktober</button>
-            <div class="panel">
-              <p>Halloween</p>
-            </div>
-
-            <button class="accordion">25 november</button>
-            <button class="accordion">16 december</button>
-            <div class="panel">
-              <p>Kerst</p>
-            </div>
+              <button class="accordion">15 april</button>
+              <div class="panel">
+                <p>Paaseieren zoeken door stad</p>
+              </div>
+              <button class="accordion">20 mei</button>
+              <div class="panel">
+                <p>Karaoke</p>
+              </div>
+              <button class="accordion">juni</button>
+              <div class="panel">
+                <p>Pride Amersfoort</p>
+              </div>
+              <button class="accordion">juli</button>
+              <div class="panel">
+                <p>Pride Amsterdam</p>
+              </div>
+              <button class="accordion">19 augustus</button>
+              <div class="panel">
+                <p>BBQ</p>
+              </div>
+              <button class="accordion">16 september</button>
+              <div class="panel">
+                <p>Bowlen</p>
+              </div>
+              <button class="accordion">11 oktober</button>
+              <div class="panel">
+                <p>Coming out Weekend</p>
+              </div>
+              <button class="accordion">16 oktober</button>
+              <div class="panel">
+                <p>Halloween</p>
+              </div>
+              <button class="accordion">25 november</button>
+              <button class="accordion">16 december</button>
+              <div class="panel">
+                <p>Kerst</p>
+              </div>
           </div>
           <div class="card">
             <div class="calendar-toolbar">
