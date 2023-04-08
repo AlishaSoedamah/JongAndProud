@@ -512,6 +512,7 @@ form {
 
 form > div {
     display: flex;
+    min-width: 200px;
     flex-direction: column;
 }
 
@@ -617,6 +618,7 @@ footer {
 
     .nav-menu.active {
         left: 0;
+        z-index: 10000;
     }
 }
 

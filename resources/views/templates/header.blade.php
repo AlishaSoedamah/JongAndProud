@@ -5,7 +5,7 @@
         <li><a href="/about">Over ons</a></li>
         <li><a href="/activities">Activiteiten</a></li>
         <li><a href="/contact">Contact</a></li>
-        @if(Session::has('user'))
+        <!-- @if(Session::has('user'))
             <li class="nav-item">
                 <a>Wekom {{ Session::get('user')['name']}}!</a>
             </li>
@@ -15,7 +15,7 @@
         @else
         <a href="/log-in"><li class="main-btn">Log in</li></a>
         <a href="/sign-up"><li class="main-btn">Aanmelden</li></a>
-        @endif
+        @endif -->
     </ul>
     <div class="hamburger">
         <span class="bar"></span>
