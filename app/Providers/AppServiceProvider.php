@@ -23,8 +23,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if(config('app.env') === 'jongproud') {
-            \URL::forceScheme('https');
-        }
+        // if(config('app.env') === 'jongproud') {
+        //     \URL::forceScheme('https');
+        // }
     }
 }
