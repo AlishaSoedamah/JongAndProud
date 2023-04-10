@@ -1,5 +1,15 @@
 {
     "version": 2,
+    "builds": [
+        {
+            "src": "dist/**",
+            "use": "@vercel/static"
+        },
+        {
+            "src": "serverless/*.js",
+            "use": "@vercel/node"
+        }
+    ],
     "functions": {
         "api/index.php": {
             "runtime": "vercel-php@0.6.0"
