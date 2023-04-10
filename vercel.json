@@ -13,7 +13,15 @@
     "routes": [
         {
             "src": "/build/(.*)",
-            "dest": "/public/build"
+            "dest": "/public/build/"
+        },
+        {
+            "src": "/resources/(.*)",
+            "dest": "/public/resources/"
+        },
+        {
+            "src": "/favicon/(.*)",
+            "dest": "/public/favicon/"
         },
         {
             "src": "/(.*)",
