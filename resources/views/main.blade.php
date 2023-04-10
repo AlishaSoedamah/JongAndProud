@@ -4,10 +4,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Home 🏳️‍🌈 🏳️‍⚧️ | Jong & Proud Amersfoort</title>
-        <link href="{{ secure_asset('/css/styles.css') }}" rel="stylesheet" type="text/css" >
-        <link href="{{ secure_asset('/css/header.css') }}" rel="stylesheet" type="text/css" >
-        <script type="module" src="{{ URL::secure_asset('/scripts/animations.js') }}"></script>
-        <link rel="icon" type="image/x-icon" href="{{ secure_asset('images/favicon.png') }}">
+        <link href="{{ mix('/css/styles.css') }}" rel="stylesheet" type="text/css" >
+        <link href="{{ mix('/css/header.css') }}" rel="stylesheet" type="text/css" >
+        <script type="module" src="{{ URL::mix('/scripts/animations.js') }}"></script>
+        <link rel="icon" type="image/x-icon" href="{{ mix('images/favicon.png') }}">
     </head>
     <body>
         <div class="main-wrapper">
