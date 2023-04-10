@@ -13,7 +13,7 @@
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "public/$1/$2"
+            "dest": "public/"
         }
     ],
     "env": {
