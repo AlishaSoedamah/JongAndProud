@@ -4,10 +4,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Home 🏳️‍🌈 🏳️‍⚧️ | Jong & Proud Amersfoort</title>
-        <link href="{{ mix('/css/styles.css') }}" rel="stylesheet" type="text/css" >
-        <link href="{{ mix('/css/header.css') }}" rel="stylesheet" type="text/css" >
-        <script type="module" src="{{ URL::mix('/scripts/animations.js') }}"></script>
-        <link rel="icon" type="image/x-icon" href="{{ mix('images/favicon.png') }}">
+        <link href="{{ asset('/css/styles.css') }}" rel="stylesheet" type="text/css" >
+        <link href="{{ asset('/css/header.css') }}" rel="stylesheet" type="text/css" >
+        <script type="module" src="{{ URL::asset('/scripts/animations.js') }}"></script>
+        <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.png') }}">
     </head>
     <body>
         <div class="main-wrapper">
@@ -33,7 +33,7 @@
             </div>
           </div>
           </div> 
-        <a href="/sign-up"><button class="main-btn">Lid worden?</button></a>
+        <!-- <a href="/sign-up"><button class="main-btn">Lid worden?</button></a> -->
         </section>
         <section class="quote-container">
           <div class="quote-block">
@@ -73,7 +73,7 @@
              Als u zich aanmeld ontvangt u een email met informatie. Nadat wij de aanmelding hebben 
              bevestigd kunt u een account aanmaken op de website waardoor u altijd op de hoogte wordt gehouden 
              met de nieuwste activiteiten en meer!</p>
-          <a href="/sign-up"><button class="main-btn">Ik wil lid worden</button></a>
+          <!-- <a href="/sign-up"><button class="main-btn">Ik wil lid worden</button></a> -->
         </section>
       </div>
       @include('templates/footer')
