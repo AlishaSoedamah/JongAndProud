@@ -12,6 +12,22 @@
     ],
     "routes": [
         {
+            "src": "/build/(.*)",
+            "dest": "/public/build/"
+        },
+        {
+            "src": "/css/(.*)",
+            "dest": "/public/css/"
+        },
+        {
+            "src": "/images/(.*)",
+            "dest": "/public/images/"
+        }, 
+        {
+            "src": "/favicon/(.*)",
+            "dest": "/public/favicon/"
+        },
+        {
             "src": "/(.*)",
             "dest": "/api/index.php"
         }
