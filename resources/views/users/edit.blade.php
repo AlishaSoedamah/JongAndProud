@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Edit</title>
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.png') }}">
-        <link href="{{ asset('styles.css') }}" rel="stylesheet" type="text/css" >
+        <link rel="icon" type="image/x-icon" href="{{ asset('/favicon.png') }}">
+        <link href="{{ asset('css/styles.css') }}" rel="stylesheet" type="text/css" >
     </head>
     <body>
         <form class="main-wrapper" action="{{ url('index/' .$users->id) }}" method="POST">

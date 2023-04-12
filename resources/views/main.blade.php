@@ -6,8 +6,8 @@
         <title>Home 🏳️‍🌈 🏳️‍⚧️ | Jong & Proud Amersfoort</title>
         <link href="{{ asset('css/styles.css') }}" rel="stylesheet" type="text/css" >
         <link href="{{ asset('css/header.css') }}" rel="stylesheet" type="text/css" >
-        <script type="module" src="{{ asset('animations.js') }}"></script>
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.png') }}">
+        <script type="module" src="{{ asset('js/animations.js') }}"></script>
+        <link rel="icon" type="image/x-icon" href="{{ asset('/favicon.png') }}">
     </head>
     <body>
         <div class="main-wrapper">
@@ -23,13 +23,13 @@
             </p>
           </div>
           <div class="main-hero-img">
-          <img class="big-img" src="{{ asset('card5.jpeg') }}" alt="">
+          <img class="big-img" src="{{ asset('images/card5.jpeg') }}" alt="">
           <div id="loader-wrapper">
             <div class="loader">
-              <img class="hero-img hero-img-two" src="{{ asset('card2.jpeg') }}" alt="">
-              <img class="hero-img hero-img-three" src="{{ asset('card3.jpeg') }}" alt="">
-              <img class="hero-img hero-img-four" src="{{ asset('card4.jpeg') }}" alt="">
-              <img class="hero-img hero-img-five" src="{{ asset('card1.jpeg') }}" alt="">
+              <img class="hero-img hero-img-two" src="{{ asset('images/card2.jpeg') }}" alt="">
+              <img class="hero-img hero-img-three" src="{{ asset('images/card3.jpeg') }}" alt="">
+              <img class="hero-img hero-img-four" src="{{ asset('images/card4.jpeg') }}" alt="">
+              <img class="hero-img hero-img-five" src="{{ asset('images/card1.jpeg') }}" alt="">
             </div>
           </div>
           </div> 
@@ -55,15 +55,15 @@
           </div>
           <div class="core-values">
             <div class="big-widget general-widget">
-                <img class="values-img" src="{{ asset('core-value-big-img.webp') }}" alt="The rainbow flag">
+                <img class="values-img" src="{{ asset('images/core-value-big-img.webp') }}" alt="The rainbow flag">
                 <h3 class="widget-text" >Veilige plek creëen. Niet bang hoeven zijn om jezelf te kunnen zijn</h3>
             </div>
             <div class="small-left-widget general-widget">
-              <img class="values-img" src="{{ asset('core-value-img-right.webp') }}" alt="The rainbow flag">
+              <img class="values-img" src="{{ asset('images/core-value-img-right.webp') }}" alt="The rainbow flag">
               <h3 class="widget-text">Activiteiten organiseren. Plezier hebben met elkaar</h3>
             </div>
             <div class="small-right-widget general-widget">
-              <img class="values-img" src="{{ asset('core-value-img-left.webp') }}" alt="The rainbow flag">
+              <img class="values-img" src="{{ asset('images/core-value-img-left.webp') }}" alt="The rainbow flag">
               <h3 class="widget-text">Connecties maken. Leer andere mensen in dezelfde community kennen</h3>
           </div>
         </article>

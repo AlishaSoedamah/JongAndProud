@@ -4,9 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Over ons | Jong & Proud Amersfoort</title>
-        <link href="{{ asset('app.js') }}" rel="stylesheet" type="text/css" >
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.png') }}">
-        <script type="module" src="{{ asset('animations.js') }}"></script>
+        <link href="{{ asset('js/app.js') }}" rel="stylesheet" type="text/css" >
+        <link rel="icon" type="image/x-icon" href="{{ asset('/favicon.png') }}">
+        <script type="module" src="{{ asset('scripts/animations.js') }}"></script>
     </head>
     <body>
         <div class="main-wrapper">
@@ -34,14 +34,14 @@
               <button class="main-btn">Word lid</button> 
             </div>
             <div class="about-row-right">
-              <img class="about-img" src="{{ asset('logo.png') }}" alt="Jong & Proud logo">
+              <img class="about-img" src="{{ asset('images/logo.png') }}" alt="Jong & Proud logo">
             </div>
           </div>
           <h1 class="center-title">Ons team</h1>
           <div class="team">
             <div class="team-row-one">
                 <h2>Joshua Kraan</h2>
-                <img class="team-pictures" src="{{ asset('Teamlead1.webp') }}" alt="Joshua Kraan">
+                <img class="team-pictures" src="{{ asset('images/Teamlead1.webp') }}" alt="Joshua Kraan">
                 <h3>organisator</h3>
                 <p>Joshua Kraan is 24 jaar en is de oprichter en organisator
                    van Jong & Proud. Naast Jong & Proud zit Joshua bij het 
@@ -52,7 +52,7 @@
             </div>
             <div class="team-row-two">
                 <h2>Marjolein du Pree</h2>
-                <img class="team-pictures" src="{{ asset('Teamlead2.webp') }}" alt="Marjolein du Pree">
+                <img class="team-pictures" src="{{ asset('images/Teamlead2.webp') }}" alt="Marjolein du Pree">
                 <h3>organisator</h3>
                 <p>Marjolein du Pree is 21 jaar en is kort nadat Jong & Proud is 
                    opgericht mede organisator van Jong & Proud. Ook marjolein is 

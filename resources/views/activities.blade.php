@@ -4,9 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Activiteiten | Jong & Proud Amersfoort</title>
-        <link href="{{ asset('styles.css') }}" rel="stylesheet" type="text/css" >
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.png') }}">
-        <script type="module" src="{{ asset('animations.js') }}"></script>
+        <link href="{{ asset('css/styles.css') }}" rel="stylesheet" type="text/css" >
+        <link rel="icon" type="image/x-icon" href="{{ asset('/favicon.png') }}">
+        <script type="module" src="{{ asset('js/animations.js') }}"></script>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
     </head>
     <body>

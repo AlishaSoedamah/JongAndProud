@@ -1,5 +1,5 @@
 <nav>
-    <a href="/"><img class="logo" src="{{ asset('logo.png') }}" alt="Jong & proud logo"></a>
+    <a href="/"><img class="logo" src="{{ asset('images/logo.png') }}" alt="Jong & proud logo"></a>
     <ul class="nav-menu">
         <li><a href="/">Home</a></li>
         <li><a href="/about">Over ons</a></li>
