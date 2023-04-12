@@ -17,12 +17,12 @@ if ($_GET['type'] === 'js') {
     echo require __DIR__ . '/../public/js/' . basename($_GET['file']);
 }
 
-if ($_GET['type'] === 'jpeg') {
+if (imagetypes() & IMG_JPG) {
     header('Content-Type: image/jpeg');
     echo require __DIR__ . imagesRoute . basename($_GET['file']);
 }
 
-if ($_GET['type'] === 'png') {
+if (imagetypes() & IMG_PNG) {
     header('Content-Type: image/png');
     echo require __DIR__ . imagesRoute . basename($_GET['file']);
 }
