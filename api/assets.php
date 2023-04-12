@@ -13,7 +13,7 @@ if ($_GET['type'] === 'css') {
 } else if ($_GET['type'] === 'js') {
     header('Content-Type: application/javascript; charset: UTF-8');
     echo require __DIR__ . '/../public/js/' . basename($_GET['file']);
+} else if ($_GET['type'] === 'img') {
+    header('Content-Type: image/' . pathinfo($_GET['file'], PATHINFO_EXTENSION));
+    echo file_get_contents(__DIR__ . $imagesRoute . basename($_GET['file']));
 }
-
-    echo require __DIR__ . '/../public/' . basename($_GET['file']);
-    echo require __DIR__ . '/../public/' . basename($_GET['file']);
