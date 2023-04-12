@@ -7,7 +7,6 @@
         "src": "/(.*)",
         "dest": "/api/index.php"
     }],
-    "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }],
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "true",
