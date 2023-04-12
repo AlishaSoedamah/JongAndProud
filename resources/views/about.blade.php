@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Over ons | Jong & Proud Amersfoort</title>
-        <link href="{{ asset('app.css') }}" rel="stylesheet" type="text/css" >
+        <link href="{{ asset('app.js') }}" rel="stylesheet" type="text/css" >
         <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.png') }}">
         <script type="module" src="{{ URL::asset('scripts/animations.js') }}"></script>
     </head>
