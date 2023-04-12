@@ -21,8 +21,6 @@ else if ($_GET['type'] === 'jpeg') {
 } else if ($_GET['type'] === 'jpeg') {
     header('Content-Type: image/webp');
     echo require __DIR__ . '/../public/images/' . basename($_GET['file']);
-}
-
 } else if ($_GET['type'] === 'ico') {
     header('Content-Type: image/x-icon');
     echo require __DIR__ . '/../public/' . basename($_GET['file']);
