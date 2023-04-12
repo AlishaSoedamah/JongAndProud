@@ -22,12 +22,12 @@ if ($_GET['type'] === 'jpeg') {
     echo require __DIR__ . imagesRoute . basename($_GET['file']);
 }
 
-if ($_GET['type'] === 'webp') {
+if ($_GET['type'] === 'png') {
     header('Content-Type: image/png');
     echo require __DIR__ . imagesRoute . basename($_GET['file']);
 }
 
-if ($_GET['type'] === 'jpeg') {
+if ($_GET['type'] === 'webp') {
     header('Content-Type: image/webp');
     echo require __DIR__ . imagesRoute . basename($_GET['file']);
 }
